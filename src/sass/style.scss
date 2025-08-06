@@ -7,11 +7,15 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: var(--font-family);
+    font-family: var(--font-family), sans-serif;
 }
 
 ul, ol, li {
     list-style-type: none;
+}
+
+body {
+    overflow-x: hidden;
 }
 
 a {
@@ -25,6 +29,24 @@ a {
     margin: 0 auto;
 }
 
+h1 {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 124%;
+    color: var(--3);
+    span {
+        color: var(--4-2);
+    }
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 140%;
+    text-align: center;
+    color: var(--black);
+}
 
 // Imports
 @include meta.load-css("blocks/_header.scss");
+@include meta.load-css("blocks/_home-main.scss");
