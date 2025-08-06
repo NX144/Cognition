@@ -1,0 +1,30 @@
+@use "sass:meta";
+
+// Variables
+@include meta.load-css("vars/_variables.scss");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+ul, ol, li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    // width: 95%;
+    // max-width: 1320px;
+    margin: 0 auto;
+}
+
+
+// Imports
+@include meta.load-css("blocks/_header.scss");

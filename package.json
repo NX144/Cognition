@@ -1,0 +1,35 @@
+{
+  "name": "cvbcv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.20",
+    "browser-sync": "^3.0.3",
+    "gulp": "^5.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^9.1.0",
+    "gulp-postcss": "^10.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^6.0.0",
+    "sass": "^1.84.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.26.4",
+    "@babel/core": "^7.26.8",
+    "@babel/preset-env": "^7.26.8",
+    "babel-loader": "^9.2.1",
+    "gulp-autoprefixer": "^9.0.0",
+    "precss": "^4.0.0",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1",
+    "webpack-stream": "^7.0.0"
+  }
+}
