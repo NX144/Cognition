@@ -1,0 +1,109 @@
+.kpt {
+	padding: 80px 0;
+	position: relative;
+
+	&::before {
+		content: url("../img/circle-konus.png");
+		position: absolute;
+		z-index: -1;
+		top: 47%;
+		transform: translateY(-50%);
+		right: -175px;
+	}
+	&::after {
+		content: url("../img/circle-konus.png");
+		position: absolute;
+		z-index: -1;
+		left: -270px;
+		bottom: -398px;
+	}
+
+	&>div>p {
+		font-weight: 300;
+		font-size: 20px;
+		line-height: 133%;
+		color: var(--black);
+		&.first {
+			font-size: 32px;
+			line-height: 120%;
+			color: var(--4-2);
+			margin-bottom: 40px;
+		}
+	}
+
+	&__list {
+		margin-top: 80px;
+		display: flex;
+		gap: 20px;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: flex-start;
+		&_item {
+			max-width: 420px;
+			width: 100%;
+			border: 1px solid var(--2-2);
+			background: var(--white);
+			border-radius: 10px;
+			padding: 40px;
+			transition: all .3s ease-in-out;
+			&:hover {
+				box-shadow: 0 20px 64px 0 var(--2);
+				background: var(--white);
+			}
+			img {
+				width: 83px;
+				height: 83px;
+				object-fit: contain;
+				display: block;
+				margin: 0 auto;
+			}
+			&>a {
+				margin-top: 30px;
+				border: 1px solid var(--2-2);
+				border-radius: 10px;
+				display: block;
+				padding: 20px 40px;
+				font-weight: 300;
+				font-size: 20px;
+				line-height: 160%;
+				text-align: center;
+				color: var(--black);
+			}
+		}
+		&_title {
+			margin-top: 20px;
+			font-weight: 600;
+			font-size: 24px;
+			line-height: 133%;
+			text-align: center;
+			color: var(--black);
+		}
+		ul {
+			margin-top: 10px;
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 150%;
+			color: var(--black);
+			li {
+				transition: all .3s ease-in-out;
+				padding-left: 30px;
+				position: relative;
+				&:before {
+					content: "";
+					position: absolute;
+					width: 3px;
+					height: 3px;
+					border-radius: 100%;
+					background: var(--black);
+					left: 12px;
+					top: 50%;
+					transform: translateY(-50%);
+				}
+				&:hover {
+					color: var(--4);
+				}
+			}
+		}
+
+	}
+}
