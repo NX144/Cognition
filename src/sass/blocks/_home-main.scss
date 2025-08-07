@@ -80,16 +80,8 @@
 		}
 		&_link {
 			margin-top: 60px;
-			display: inline-block;
-			border: 1px solid var(--2-2);
-			border-radius: 10px;
-			padding: 20px 40px;
-			background: var(--white);
-			font-weight: 300;
-			font-size: 20px;
-			line-height: 160%;
-			text-align: center;
-			color: var(--black);
+			width: 100%;
+			max-width: 290px;
 		}
 		&_absolute {
 			position: absolute;

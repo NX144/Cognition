@@ -1,0 +1,35 @@
+.btn-main, .btn-red {
+    // Btn style
+    width: max-content;
+    border: 1px solid var(--2-2);
+    border-radius: 10px;
+    padding: 20px 40px;
+    background: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.21s cubic-bezier(0.33, 0.42, 0.29, 0.84);
+
+    // Text
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 160%;
+    text-align: center;
+    color: var(--black);
+    &:hover {
+        color: var(--4);
+        box-shadow: 0 20px 64px 0 var(--2);
+    }
+}
+
+.btn-red {
+    background: var(--4);
+    color: var(--white);
+    border: 2px solid transparent;
+    &:hover {
+        border-color: var(--2-2);
+        color: var(--4);
+        background: var(--white);
+        box-shadow: 0 20px 64px 0 var(--2);
+    }
+}
