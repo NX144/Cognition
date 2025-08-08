@@ -1,0 +1,71 @@
+.certificates {
+	padding-top: 80px;
+	&__top {
+		display: flex;
+		column-gap: 80px;
+		row-gap: 20px;
+		align-items: center;
+		justify-content: center;
+	}
+	&__wrap {
+		width: calc(95% + 64px);
+		max-width: 1804px;
+		margin: 0 auto;
+	}
+	&__slider {
+		position: relative;
+		margin-top: 60px;
+		&_slide {
+			width: max-content!important;
+			height: 370px;
+			border: 1px solid var(--2-2);
+			border-radius: 10px;
+			background: var(--white);
+			padding: 19px 28px;
+			transition: all .3s ease-in-out;
+			&.wide {
+				padding: 28px 36px;
+			}
+			&:hover {
+				box-shadow: 0 20px 64px 0 var(--2);
+				background: var(--white);
+			}
+			img {
+				height: 100%;
+				width: auto;
+				object-fit: contain;
+			}
+		}
+	}
+	.swiper-certificates-button-prev, .swiper-certificates-button-next {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		left: 0;
+		z-index: 10;
+		border-radius: 100%;
+		background: rgba(255, 255, 255, 0.6);
+		border: 1px solid var(--2-2);
+		width: 66px;
+		height: 66px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+		transition: all .3s ease-in-out;
+		svg path {
+			transition: all .3s ease-in-out;
+		}
+		&:hover {
+			box-shadow: 0 20px 64px 0 var(--2);
+			svg path {
+				fill: var(--4);
+			}
+		}
+	}
+
+	.swiper-certificates-button-next {
+		left: unset;
+		right: 0;
+	}
+}
