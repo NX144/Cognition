@@ -13,8 +13,12 @@
 		margin: 0 auto;
 	}
 	&__slider {
+		display: none;
 		position: relative;
 		margin-top: 60px;
+		&.active {
+			display: block;
+		}
 		&_slide {
 			width: max-content!important;
 			height: 370px;
