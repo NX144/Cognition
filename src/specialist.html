@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cognition</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+	<main>
+		<div class="spec">
+			<div class="container">
+				<ul class="breadcrumbs">
+					<li><a href="/">Главная</a></li>
+					<li><a href="/specialists">Специалисты</a></li>
+					<li><span>Петровская Александра Александровна</span></li>
+				</ul>
+				<div class="spec__wrap">
+					<h1>Петровская <br>Александра Александровна</h1>
+					<div class="spec__descr">
+						<h3>Когнитивно-поведенческий психолог</h3>
+						<a href="/" class="btn-video">
+							<span>
+								<svg width="12" height="15" viewBox="0 0 12 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+								  <path d="M11.9443 7.33333L0.944335 14.6667L0.944336 -4.80825e-07L11.9443 7.33333Z" fill="white" />
+								</svg>
+							</span>
+							Визитка
+						</a>
+						<a href="/" class="btn-main">Записаться</a>
+					</div>
+					<div class="spec__middle">
+						<img src="./icons/spec/1.png" alt="1">
+						<div class="spec__middle_wrap">
+							<img src="./icons/spec/2.png" alt="2">
+							<p><span>2022</span>Член Ассоциации Когнитивно-Поведенческой Психотерапии</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="spec__bottom">
+				<div class="container">
+					<div class="spec__left">
+						<ul>
+							<li>Назначает препараты</li>
+							<li>Назначает препараты</li>
+							<li>Системно-семейная терапия</li>
+							<li>Назначает препараты</li>
+							<li>Системно-семейная терапия</li>
+						</ul>
+						<ul>
+							<li>Дети (от 0 до 12 лет)</li>
+							<li>Дети (от 0 до 12 лет)</li>
+							<li>Дети (от 0 до 12 лет)</li>
+							<li>Подростки (от 13 до 17 лет)</li>
+							<li>Дети (от 0 до 12 лет)</li>
+							<li>Дети (от 0 до 12 лет)</li>
+						</ul>
+					</div>
+					<div class="spec__right">
+						<div class="price">
+							<svg width="115" height="44" viewBox="0 0 115 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M57.4609 0C84.96 0 108.102 18.655 114.922 44H0C6.81996 18.655 29.9619 0 57.4609 0Z" fill="#9B011D" />
+							</svg>
+							стоимость
+							<span>7000</span>
+							<span>₽</span>
+						</div>
+						<div class="kazak">
+							<svg width="115" height="44" viewBox="0 0 115 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M57.4609 0C84.96 0 108.102 18.655 114.922 44H0C6.81996 18.655 29.9619 0 57.4609 0Z" fill="#FF8740" />
+							</svg>
+							опыт работы
+							<span>6</span>
+							<span>лет</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<img class="cloud" src="./img/cloud.png" alt="cloud">
+			<img class="circle" src="./img/circle-white.png" alt="circle">
+			<img class="women" src="./img/spec/1.png" alt="women">
+		</div>
+	</main>
+
+	<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+	<script>
+		document.querySelectorAll('.certificates__slider_slide').forEach(slide => {
+			if(slide.offsetWidth >= 330) {
+				slide.classList.add('wide');
+			}
+		})
+		const swiper = new Swiper('.swiper-certificates', {
+			slidesPerView: 4,
+			spaceBetween: 20,
+			loop: false,
+			lazy: true,
+			navigation: {
+				nextEl: '.swiper-certificates-button-next',
+				prevEl: '.swiper-certificates-button-prev',
+			},
+		})
+	</script>
+	<script src="js/script.js"></script>
+</body>
+</html>
