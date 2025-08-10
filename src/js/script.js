@@ -41,9 +41,17 @@ document.addEventListener("DOMContentLoaded", () => {
 			option.classList.add("selected");
 			selectedValue.textContent = option.textContent.trim(); // Update selected value
 
+			document.querySelectorAll('.certificates__slider').forEach(slider => {
+				if(slider.getAttribute('data-tab') === option.textContent.trim()) {
+					slider.classList.add('active');
+				} else {
+					slider.classList.remove('active');
+				}
+			})
+
 			if (option.dataset.value === "clear") {
 				// Reset to the default value
-				selectedValue.textContent = "Open this select menu";
+				selectedValue.textContent = "Выбрать психолога";
 				options.forEach((opt) => opt.classList.remove("selected"));
 				return;
 			}
@@ -95,4 +103,16 @@ document.addEventListener("DOMContentLoaded", () => {
 			}
 		});
 	});
+
+	// укоротитель текста 3000
+	function truncateString(str, num) {
+		if (str.length <= num) {
+			return str;
+		}
+		return str.slice(0, num) + "...";
+	}
+
+	document.querySelectorAll('.blog__list_item-descr p').forEach(item => {
+		item.textContent = truncateString(item.textContent, 293);
+	})
 });

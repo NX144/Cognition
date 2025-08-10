@@ -1,0 +1,64 @@
+.family {
+	padding-top: 40px;
+
+	&__wrap {
+		padding: 52px 0 162px 40px;
+		background: var(--2);
+		&>div {
+			display: grid;
+			grid-template-columns: 192px 1fr;
+			column-gap: 99px;
+		}
+		img {
+			width: 100%;
+			height: auto;
+			object-fit: contain;
+		}
+		h3 {
+			font-size: 28px;
+			line-height: 130%;
+		}
+		p {
+			font-size: 20px;
+			line-height: 160%;
+			font-weight: 300;
+			color: var(--black);
+		}
+	}
+	&__slider {
+		margin-top: -110px;
+		position: relative;
+		&_slide {
+			img {
+				display: block;
+				width: 100%;
+				border-radius: 10px;
+				border: 1px solid #c5c5c5;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+	}
+
+	.swiper-family-button-prev, .swiper-family-button-next {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 100%;
+		border: 1px solid var(--black);
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		left: -70px;
+		width: 41px;
+		height: 41px;
+		cursor: pointer;
+	}
+	.swiper-family-button-next {
+		left: unset;
+		right: -70px;
+	}
+	.swiper-family {
+		overflow-x: hidden;
+	}
+}
