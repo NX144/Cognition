@@ -1,0 +1,197 @@
+.footer {
+    padding: 56px 66px 56px 92px;
+    position: relative;
+    background-color: var(--2);
+    display: grid;
+    grid-template-columns: 302px 1fr 311px;
+    column-gap: 115px;
+    justify-content: space-between;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 365px;
+        height: 196px;
+        bottom: 0;
+        right: 0;
+        display: block;
+        background-image: url("../../icons/vector-footer.png");
+        z-index: 1;
+    }
+    &__first {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        z-index: 99;
+    }
+    &__logo {
+        width: 300px;
+        height: auto;
+        margin-bottom: 22px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    &__info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 10px;
+        &_time {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 133%;
+            color: var(--1-2);
+            margin-bottom: 5px;
+        }
+    }
+    &__phone {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 133%;
+        text-align: right;
+        color: var(--1-2);
+        &::before {
+            background: #cf5610;
+        }
+        &:hover {
+            color: #cf5610;
+        }
+    }
+    &__social {
+        display: flex;
+        align-items: center;
+        width: 219px;
+        &_text {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 133%;
+            color: var(--black);
+            margin-right: 10px;
+        }
+        &_link {
+            width: 40px;
+            height: 40px;
+        }
+    }
+    &__last {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        z-index: 99;
+    }
+    &__btn {
+        width: 100%;
+        box-shadow: unset;
+        &:hover {
+            box-shadow: 0 20px 64px 0 rgba(248, 187, 158, 0.33);
+        }
+    }
+    &__social-2 {
+        display: flex;
+        gap: 10px;
+        &_link {
+            max-width: 40px;
+            &:first-child {
+                width: 34px;
+            }
+            &:nth-child(2) {
+                width: 38px;
+            }
+            svg path {
+                transition: .13s all ease-in-out;
+            }
+            &:hover {
+                &[title="youtube"] {
+                    svg path:first-child {
+                        fill: rgb(218, 10, 10);
+                    }
+                }
+                &[title="vk"] {
+                    svg path {
+                        fill: #1792cf;
+                    }
+                }
+            }
+        }
+    }
+    &__copyright {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 135%;
+        color: var(--black);
+    }
+
+    &__nav {
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+        width: max-content;
+        z-index: 99;
+    }
+    &__menu {
+        display: flex;
+    }
+    &__item {
+        a {
+            font-weight: 400;
+            font-size: 18px;
+            color: var(--black);
+            padding: 21.5px 10px;
+            transition: .15s all ease-in-out;
+            svg path {
+                transition: .15s all ease-in-out;
+            }
+            &:hover {
+                color: var(--4);
+                svg path {
+                    fill: var(--4);
+                }
+            }
+        }
+    }
+    &__devider {
+        width: 100%;
+        height: 2px;
+        background: var(--white);
+    }
+    &__downmenu {
+        display: grid;
+        grid-template-rows: repeat(3, 28px);
+        grid-template-columns: repeat(3, max-content);
+        grid-auto-flow: column;
+        flex-wrap: wrap;
+        row-gap: 20px;
+        column-gap: 10px;
+    }
+    &__downitem {
+        width: max-content;
+        a {
+            font-weight: 400;
+            font-size: 18px;
+            color: var(--black);
+            padding: 10px 20px;
+            transition: .15s all ease-in-out;
+            svg path {
+                transition: .15s all ease-in-out;
+            }
+            &:hover {
+                color: var(--4);
+                svg path {
+                    fill: var(--4);
+                }
+            }
+        }
+        &:nth-child(-n+3) {
+            a {
+                padding-left: 0;
+            }
+        }
+        &:nth-last-child(-n+3) {
+            a {
+                padding-right: 0;
+            }
+        }
+    }
+}

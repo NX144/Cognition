@@ -192,6 +192,7 @@ h4 {
 // Imports
 @include meta.load-css("blocks/_btns.scss");
 @include meta.load-css("blocks/_header.scss");
+@include meta.load-css("blocks/_footer.scss");
 @include meta.load-css("blocks/_team.scss");
 
 @include meta.load-css("blocks/_home-main.scss");
