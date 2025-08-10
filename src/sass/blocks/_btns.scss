@@ -19,6 +19,9 @@
     &:hover {
         color: var(--4);
         box-shadow: 0 20px 64px 0 var(--2);
+        svg path {
+            fill: var(--4);
+        }
     }
 }
 

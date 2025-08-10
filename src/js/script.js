@@ -103,4 +103,16 @@ document.addEventListener("DOMContentLoaded", () => {
 			}
 		});
 	});
+
+	// укоротитель текста 3000
+	function truncateString(str, num) {
+		if (str.length <= num) {
+			return str;
+		}
+		return str.slice(0, num) + "...";
+	}
+
+	document.querySelectorAll('.blog__list_item-descr p').forEach(item => {
+		item.textContent = truncateString(item.textContent, 293);
+	})
 });

@@ -1,5 +1,12 @@
 .certificates {
 	padding-top: 80px;
+	position: relative;
+	.circle {
+		position: absolute;
+		top: -316px;
+		right: -73px;
+		z-index: -1;
+	}
 	&__top {
 		display: flex;
 		column-gap: 80px;

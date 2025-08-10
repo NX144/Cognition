@@ -1,0 +1,18 @@
+.about {
+	padding-top: 39px;
+	h2 {
+		text-align: left;
+	}
+	&__wrap {
+		margin-top: 20px;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 40px;
+
+		font-weight: 300;
+		font-size: 20px;
+		line-height: 160%;
+		color: var(--black);
+
+	}
+}
