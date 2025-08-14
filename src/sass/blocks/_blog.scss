@@ -1,5 +1,16 @@
 .blog {
-	padding-top: 80px;
+	&__top {
+		display: flex;
+		gap: 80px;
+		justify-content: center;
+		align-items: center;
+	}
+	&__selects {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 40px;
+	}
 	&__list {
 		margin: 60px 0;
 		display: flex;
@@ -89,4 +100,8 @@
 			}
 		}
 	}
+}
+
+.blog-mb {
+	margin-bottom: 130px;
 }

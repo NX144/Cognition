@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cognition</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <a href="/" class="header__img">
+            <img src="./icons/main-logo.png" alt="logotype">
+        </a>
+        <nav class="header__nav">
+            <ul class="header__menu">
+                <li class="header__item">
+                    <a href="/" class="header__item_link">О центре</a>
+                </li>
+                <li class="header__item">
+                    <a href="/" class="header__item_link">
+                        Форматы работы
+                        <svg width="17" height="10" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M15.8439 0.993114C16.1042 1.25346 16.1042 1.67557 15.8439 1.93592L8.7728 9.00699C8.51245 9.26734 8.09034 9.26734 7.82999 9.00699L0.758922 1.93592C0.498573 1.67557 0.498572 1.25346 0.758922 0.993114C1.01927 0.732764 1.44138 0.732764 1.70173 0.993114L8.30139 7.59278L14.9011 0.993114C15.1614 0.732764 15.5835 0.732764 15.8439 0.993114Z"
+                                fill="#000000"/>
+                        </svg>
+                    </a>
+                </li>
+                <li class="header__item">
+                    <a href="/" class="header__item_link">
+                        Направления
+                        <svg width="17" height="10" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M15.8439 0.993114C16.1042 1.25346 16.1042 1.67557 15.8439 1.93592L8.7728 9.00699C8.51245 9.26734 8.09034 9.26734 7.82999 9.00699L0.758922 1.93592C0.498573 1.67557 0.498572 1.25346 0.758922 0.993114C1.01927 0.732764 1.44138 0.732764 1.70173 0.993114L8.30139 7.59278L14.9011 0.993114C15.1614 0.732764 15.5835 0.732764 15.8439 0.993114Z"
+                                fill="#000000"/>
+                        </svg>
+                    </a>
+                </li>
+                <li class="header__item">
+                    <a href="/" class="header__item_link">Специалисты</a>
+                </li>
+                <li class="header__item">
+                    <a href="/" class="header__item_link">О Методе КПТ</a>
+                </li>
+                <li class="header__item">
+                    <a href="/" class="header__item_link">Блог</a>
+                </li>
+                <li class="header__item">
+                    <a href="/" class="header__item_link">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header__info">
+            <p class="header__info_time">Режим работы с 10:00 до 20:00</p>
+            <a href="tel:+79673638350" class="header__phone">+7 967 363 83 50</a>
+        </div>
+        <div class="header__contacts">
+            <p class="header__contacts_text">Написать нам:</p>
+            <div class="header__contacts_links">
+                <a href="/" title="whatsapp" class="header__contacts_link">
+                    <svg width="51" height="50" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_2003_230)">
+                            <circle cx="25.5146" cy="25" r="25" fill="#2FB34D"/>
+                            <path
+                                    d="M37.4686 17.4537C33.268 10.9348 24.666 9.00332 18.0134 13.0474C11.5217 17.0915 9.43142 25.9041 13.632 32.4028L13.9736 32.9259L12.5668 38.1973L17.8325 36.7889L18.3551 37.131C20.6262 38.3583 23.0983 39.0625 25.5503 39.0625C28.1832 39.0625 30.8161 38.3583 33.0872 36.9499C39.5789 32.7247 41.5084 24.0933 37.4686 17.4135V17.4537ZM33.7906 31.0145C33.0872 32.0608 32.2028 32.765 30.9768 32.946C30.2734 32.946 29.3891 33.2881 25.892 31.8998C22.9174 30.4914 20.4453 28.1977 18.6968 25.562C17.6516 24.3347 17.109 22.7452 16.9482 21.1558C16.9482 19.7474 17.4708 18.52 18.3551 17.6348C18.6968 17.2927 19.0585 17.1117 19.4002 17.1117H20.2845C20.6262 17.1117 20.988 17.1117 21.1689 17.8159C21.5105 18.7011 22.3948 20.8137 22.3948 20.9948C22.5757 21.1759 22.4953 22.5239 21.6914 23.2885C21.2492 23.7915 21.1689 23.8116 21.3497 24.1737C22.0532 25.22 22.9375 26.2863 23.8017 27.1716C24.8468 28.0569 25.9121 28.7611 27.1381 29.2842C27.4797 29.4653 27.8415 29.4653 28.0224 29.1031C28.2033 28.7611 29.0675 27.8758 29.4293 27.5137C29.7709 27.1716 29.9518 27.1716 30.3136 27.3326L33.1274 28.741C33.469 28.9221 33.8308 29.083 34.0117 29.2641C34.1926 29.7872 34.1926 30.4914 33.8308 31.0145H33.7906Z"
+                                    fill="white"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_2003_230">
+                                <rect width="50" height="50" fill="white" transform="translate(0.514648)"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+                <a href="/" title="telegram" class="header__contacts_link">
+                    <svg width="51" height="50" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="25.5146" cy="25" r="25" fill="#018CCF"/>
+                        <path
+                                d="M39.4826 14.7756L34.9849 36.0107C34.6494 37.5062 33.7885 37.8431 32.5446 37.1679L25.7981 32.1499L22.4954 35.3341C22.1614 35.6724 21.826 36.0107 21.06 36.0107L21.587 29.0122L34.1715 17.4792C34.6969 16.9478 34.0275 16.7546 33.358 17.1903L17.7113 27.1304L10.9633 25.0556C9.48044 24.5735 9.48044 23.5586 11.2988 22.8849L37.5202 12.6049C38.8116 12.2187 39.913 12.8953 39.4826 14.7756Z"
+                                fill="white"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="wrap-breadcrumbs">
+        <div class="container">
+            <ul class="breadcrumbs">
+                <li><a href="/">Главная</a></li>
+                <li><span>Блог</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="blog">
+        <div class="container">
+            <div class="blog__top">
+                <h2>Наши статьи</h2>
+                <!-- Custom Dropdown Structure -->
+                <div class="blog__selects">
+                    <div class="custom-select">
+                        <button
+                                id="dropdown-button"
+                                class="select-button"
+                                role="combobox"
+                                aria-label="select button"
+                                aria-haspopup="listbox"
+                                aria-expanded="false"
+                                aria-controls="select-dropdown"
+                        >
+                            <span class="selected-value">Выбрать психолога</span>
+                            <span class="arrow">
+                                <img src="./icons/arrow-down.png" alt="arrow">
+                            </span>
+                        </button>
+                        <ul
+                                class="select-dropdown hidden"
+                                role="listbox"
+                                id="select-dropdown"
+                                aria-labelledby="dropdown-button"
+                        >
+                            <li role="option">Выбрать психолога 1</li>
+                            <li role="option">Выбрать психолога 2</li>
+                            <li role="option">Выбрать психолога 3</li>
+                        </ul>
+                    </div>
+
+                    <div class="custom-select">
+                        <button
+                                id="dropdown-button"
+                                class="select-button"
+                                role="combobox"
+                                aria-label="select button"
+                                aria-haspopup="listbox"
+                                aria-expanded="false"
+                                aria-controls="select-dropdown"
+                        >
+                            <span class="selected-value">Выбрать тему</span>
+                            <span class="arrow">
+                                <img src="./icons/arrow-down.png" alt="arrow">
+                            </span>
+                        </button>
+                        <ul
+                                class="select-dropdown hidden"
+                                role="listbox"
+                                id="select-dropdown"
+                                aria-labelledby="dropdown-button"
+                        >
+                            <li role="option">Тема 1</li>
+                            <li role="option">Тема 2</li>
+                            <li role="option">Тема 3</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <ul class="blog__list">
+                <li class="blog__list_item">
+                    <img src="./img/blog/1.jpg" alt="1">
+                    <div class="blog__list_item-descr">
+                        <span>3 мая 2024</span>
+                        <h3>Сертификация на соответствие ГОСТ</h3>
+                        <p>Работа в группе с другими участниками под руководством психолога. Безопасная атмосфера, в которой можно делиться, слушать и видеть, что вы не одиноки в своих чувствах и трудностях.
+                            Помогает всей семье лучше понять друг друга, наладить доверие и справляться с кризисами. Вовлекаются все...</p>
+                    </div>
+                    <div class="blog__list_item-info">
+                        <div class="blog__list_item-top">
+                            <img src="./icons/author.png" alt="author">
+                            <div class="blog__list_item-content">
+                                <p>Петровская Александра Александровна</p>
+                                <p>Когнитивно-поведенческий психолог</p>
+                            </div>
+                        </div>
+                        <a href="/" class="btn-main">
+                            Читать статью
+                            <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.741372 0.411477C1.00331 0.149543 1.42798 0.149543 1.68992 0.411477L8.80402 7.52557C9.06595 7.78751 9.06595 8.21219 8.80402 8.47412L1.68992 15.5882C1.42798 15.8502 1.00331 15.8502 0.741373 15.5882C0.479439 15.3263 0.479439 14.9016 0.741373 14.6397L7.3812 7.99985L0.741372 1.36002C0.479438 1.09809 0.479438 0.673411 0.741372 0.411477Z" fill="black"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </li>
+                <li class="blog__list_item">
+                    <img src="./img/blog/2.jpg" alt="2">
+                    <div class="blog__list_item-descr">
+                        <span>15 сентября 2025</span>
+                        <h3>Подростковые психологи</h3>
+                        <p>Работа в группе с другими участниками под руководством психолога. Безопасная атмосфера, в которой можно делиться, слушать и видеть, что вы не одиноки в своих чувствах и трудностях.</p>
+                    </div>
+                    <div class="blog__list_item-info">
+                        <div class="blog__list_item-top">
+                            <img src="./icons/author.png" alt="author">
+                            <div class="blog__list_item-content">
+                                <p>Петровская Александра Александровна</p>
+                                <p>Когнитивно-поведенческий психолог</p>
+                            </div>
+                        </div>
+                        <a href="/" class="btn-main">
+                            Читать статью
+                            <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.741372 0.411477C1.00331 0.149543 1.42798 0.149543 1.68992 0.411477L8.80402 7.52557C9.06595 7.78751 9.06595 8.21219 8.80402 8.47412L1.68992 15.5882C1.42798 15.8502 1.00331 15.8502 0.741373 15.5882C0.479439 15.3263 0.479439 14.9016 0.741373 14.6397L7.3812 7.99985L0.741372 1.36002C0.479438 1.09809 0.479438 0.673411 0.741372 0.411477Z" fill="black"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </li>
+                <li class="blog__list_item">
+                    <img src="./img/blog/1.jpg" alt="1">
+                    <div class="blog__list_item-descr">
+                        <span>3 мая 2024</span>
+                        <h3>Сертификация на соответствие ГОСТ</h3>
+                        <p>Работа в группе с другими участниками под руководством психолога. Безопасная атмосфера, в которой можно делиться, слушать и видеть, что вы не одиноки в своих чувствах и трудностях.
+                            Помогает всей семье лучше понять друг друга, наладить доверие и справляться с кризисами. Вовлекаются все...</p>
+                    </div>
+                    <div class="blog__list_item-info">
+                        <div class="blog__list_item-top">
+                            <img src="./icons/author.png" alt="author">
+                            <div class="blog__list_item-content">
+                                <p>Петровская Александра Александровна</p>
+                                <p>Когнитивно-поведенческий психолог</p>
+                            </div>
+                        </div>
+                        <a href="/" class="btn-main">
+                            Читать статью
+                            <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.741372 0.411477C1.00331 0.149543 1.42798 0.149543 1.68992 0.411477L8.80402 7.52557C9.06595 7.78751 9.06595 8.21219 8.80402 8.47412L1.68992 15.5882C1.42798 15.8502 1.00331 15.8502 0.741373 15.5882C0.479439 15.3263 0.479439 14.9016 0.741373 14.6397L7.3812 7.99985L0.741372 1.36002C0.479438 1.09809 0.479438 0.673411 0.741372 0.411477Z" fill="black"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </li>
+                <li class="blog__list_item">
+                    <img src="./img/blog/1.jpg" alt="1">
+                    <div class="blog__list_item-descr">
+                        <span>3 мая 2024</span>
+                        <h3>Сертификация на соответствие ГОСТ</h3>
+                        <p>Работа в группе с другими участниками под руководством психолога. Безопасная атмосфера, в которой можно делиться, слушать и видеть, что вы не одиноки в своих чувствах и трудностях.
+                            Помогает всей семье лучше понять друг друга, наладить доверие и справляться с кризисами. Вовлекаются все...</p>
+                    </div>
+                    <div class="blog__list_item-info">
+                        <div class="blog__list_item-top">
+                            <img src="./icons/author.png" alt="author">
+                            <div class="blog__list_item-content">
+                                <p>Петровская Александра Александровна</p>
+                                <p>Когнитивно-поведенческий психолог</p>
+                            </div>
+                        </div>
+                        <a href="/" class="btn-main">
+                            Читать статью
+                            <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.741372 0.411477C1.00331 0.149543 1.42798 0.149543 1.68992 0.411477L8.80402 7.52557C9.06595 7.78751 9.06595 8.21219 8.80402 8.47412L1.68992 15.5882C1.42798 15.8502 1.00331 15.8502 0.741373 15.5882C0.479439 15.3263 0.479439 14.9016 0.741373 14.6397L7.3812 7.99985L0.741372 1.36002C0.479438 1.09809 0.479438 0.673411 0.741372 0.411477Z" fill="black"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </li>
+                <li class="blog__list_item">
+                    <img src="./img/blog/1.jpg" alt="1">
+                    <div class="blog__list_item-descr">
+                        <span>3 мая 2024</span>
+                        <h3>Сертификация на соответствие ГОСТ</h3>
+                        <p>Работа в группе с другими участниками под руководством психолога. Безопасная атмосфера, в которой можно делиться, слушать и видеть, что вы не одиноки в своих чувствах и трудностях.
+                            Помогает всей семье лучше понять друг друга, наладить доверие и справляться с кризисами. Вовлекаются все...</p>
+                    </div>
+                    <div class="blog__list_item-info">
+                        <div class="blog__list_item-top">
+                            <img src="./icons/author.png" alt="author">
+                            <div class="blog__list_item-content">
+                                <p>Петровская Александра Александровна</p>
+                                <p>Когнитивно-поведенческий психолог</p>
+                            </div>
+                        </div>
+                        <a href="/" class="btn-main">
+                            Читать статью
+                            <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.741372 0.411477C1.00331 0.149543 1.42798 0.149543 1.68992 0.411477L8.80402 7.52557C9.06595 7.78751 9.06595 8.21219 8.80402 8.47412L1.68992 15.5882C1.42798 15.8502 1.00331 15.8502 0.741373 15.5882C0.479439 15.3263 0.479439 14.9016 0.741373 14.6397L7.3812 7.99985L0.741372 1.36002C0.479438 1.09809 0.479438 0.673411 0.741372 0.411477Z" fill="black"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </li>
+                <li class="blog__list_item">
+                    <img src="./img/blog/1.jpg" alt="1">
+                    <div class="blog__list_item-descr">
+                        <span>3 мая 2024</span>
+                        <h3>Сертификация на соответствие ГОСТ</h3>
+                        <p>Работа в группе с другими участниками под руководством психолога. Безопасная атмосфера, в которой можно делиться, слушать и видеть, что вы не одиноки в своих чувствах и трудностях.
+                            Помогает всей семье лучше понять друг друга, наладить доверие и справляться с кризисами. Вовлекаются все...</p>
+                    </div>
+                    <div class="blog__list_item-info">
+                        <div class="blog__list_item-top">
+                            <img src="./icons/author.png" alt="author">
+                            <div class="blog__list_item-content">
+                                <p>Петровская Александра Александровна</p>
+                                <p>Когнитивно-поведенческий психолог</p>
+                            </div>
+                        </div>
+                        <a href="/" class="btn-main">
+                            Читать статью
+                            <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.741372 0.411477C1.00331 0.149543 1.42798 0.149543 1.68992 0.411477L8.80402 7.52557C9.06595 7.78751 9.06595 8.21219 8.80402 8.47412L1.68992 15.5882C1.42798 15.8502 1.00331 15.8502 0.741373 15.5882C0.479439 15.3263 0.479439 14.9016 0.741373 14.6397L7.3812 7.99985L0.741372 1.36002C0.479438 1.09809 0.479438 0.673411 0.741372 0.411477Z" fill="black"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+            <div class="pagination">
+                <a href="/" class="pagination__left">
+                    <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M0.318295 8.6602C0.318295 9.04258 0.628275 9.35256 1.01065 9.35256H16.677C17.0593 9.35256 17.3693 9.04258 17.3693 8.6602C17.3693 8.27782 17.0593 7.96784 16.677 7.96784H1.01065C0.628275 7.96784 0.318296 8.27782 0.318295 8.6602Z"
+                            fill="black" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M8.84381 0.827045C8.57343 0.556662 8.13505 0.556662 7.86467 0.827045L0.521083 8.17063C0.250699 8.44101 0.2507 8.87939 0.521083 9.14977L7.86467 16.4934C8.13505 16.7637 8.57343 16.7637 8.84381 16.4934C9.11419 16.223 9.11419 15.7846 8.84381 15.5142L1.9898 8.6602L8.84381 1.80619C9.11419 1.53581 9.11419 1.09743 8.84381 0.827045Z"
+                            fill="black" />
+                    </svg>
+                </a>
+                <ul class="pagination__block">
+                    <li class="pagination__item">
+                        <a href="/">1</a>
+                    </li>
+                    <li class="pagination__item active-page">
+                        <a href="/">2</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a href="/">3</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a href="/">4</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a href="/">...</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a href="/">12</a>
+                    </li>
+                </ul>
+                <a href="/" class="pagination__right">
+                    <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M17.6818 8.6602C17.6818 9.04258 17.3718 9.35256 16.9894 9.35256H1.32309C0.940714 9.35256 0.630734 9.04258 0.630734 8.6602C0.630735 8.27782 0.940714 7.96784 1.32309 7.96784H16.9894C17.3718 7.96784 17.6818 8.27782 17.6818 8.6602Z"
+                            fill="black" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M9.15625 0.827045C9.42663 0.556662 9.86501 0.556662 10.1354 0.827045L17.479 8.17063C17.7494 8.44101 17.7494 8.87939 17.479 9.14977L10.1354 16.4934C9.86501 16.7637 9.42663 16.7637 9.15625 16.4934C8.88587 16.223 8.88587 15.7846 9.15625 15.5142L16.0103 8.6602L9.15625 1.80619C8.88587 1.53581 8.88587 1.09743 9.15625 0.827045Z"
+                            fill="black" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="sign-up spec-sign sign-up-mb">
+        <div class="container">
+            <div class="sign-up__wrap">
+                <div class="sign-up__content">
+                    <h2>Запись на консультацию или приём</h2>
+                    <h3>Записаться на прием можно по телефону:</h3>
+                    <span>+7 967 363 83 50</span>
+                    <div class="sign-up__bottom">
+                        <span>Также вы можете связаться с нами: </span>
+                        <a href="/" title="whatsapp">
+                            <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_2067_2068)">
+                                    <circle cx="25" cy="25" r="25" fill="#2FB34D"></circle>
+                                    <path d="M36.954 17.4537C32.7534 10.9348 24.1513 9.00332 17.4988 13.0474C11.007 17.0915 8.91678 25.9041 13.1173 32.4028L13.459 32.9259L12.0521 38.1973L17.3179 36.7889L17.8404 37.131C20.1115 38.3583 22.5836 39.0625 25.0356 39.0625C27.6685 39.0625 30.3014 38.3583 32.5725 36.9499C39.0643 32.7247 40.9937 24.0933 36.954 17.4135V17.4537ZM33.276 31.0145C32.5725 32.0608 31.6882 32.765 30.4622 32.946C29.7588 32.946 28.8744 33.2881 25.3773 31.8998C22.4028 30.4914 19.9307 28.1977 18.1821 25.562C17.137 24.3347 16.5943 22.7452 16.4336 21.1558C16.4336 19.7474 16.9561 18.52 17.8404 17.6348C18.1821 17.2927 18.5439 17.1117 18.8856 17.1117H19.7699C20.1115 17.1117 20.4733 17.1117 20.6542 17.8159C20.9959 18.7011 21.8802 20.8137 21.8802 20.9948C22.0611 21.1759 21.9807 22.5239 21.1768 23.2885C20.7346 23.7915 20.6542 23.8116 20.8351 24.1737C21.5385 25.22 22.4229 26.2863 23.2871 27.1716C24.3322 28.0569 25.3974 28.7611 26.6234 29.2842C26.9651 29.4653 27.3269 29.4653 27.5077 29.1031C27.6886 28.7611 28.5528 27.8758 28.9146 27.5137C29.2563 27.1716 29.4372 27.1716 29.7989 27.3326L32.6127 28.741C32.9544 28.9221 33.3162 29.083 33.497 29.2641C33.6779 29.7872 33.6779 30.4914 33.3162 31.0145H33.276Z" fill="white"></path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_2067_2068">
+                                        <rect width="50" height="50" fill="white"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                        <a href="/" title="telegram">
+                            <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="25" cy="25" r="25" fill="#018CCF"></circle>
+                                <path d="M38.9677 14.7756L34.47 36.0107C34.1345 37.5062 33.2736 37.8431 32.0297 37.1679L25.2832 32.1499L21.9805 35.3341C21.6465 35.6724 21.3111 36.0107 20.5451 36.0107L21.0721 29.0122L33.6566 17.4792C34.182 16.9478 33.5126 16.7546 32.8431 17.1903L17.1964 27.1304L10.4484 25.0556C8.96555 24.5735 8.96555 23.5586 10.7839 22.8849L37.0053 12.6049C38.2967 12.2187 39.3981 12.8953 38.9677 14.7756Z" fill="white"></path>
+                            </svg>
+                        </a>
+                        <a href="/" class="btn-main">Записаться</a>
+                    </div>
+                </div>
+            </div>
+            <img src="./img/cloud.png" alt="cloud" class="sign-up__img cloud">
+            <img src="./img/sign-up-women2.png" alt="women" class="sign-up__img women">
+            <img src="./img/circle-white.png" alt="circle" class="sign-up__img circle">
+        </div>
+    </section>
+
+
+
+    <footer class="footer">
+        <div class="footer__first">
+            <a href="/" class="footer__logo">
+                <img src="./icons/main-logo.png" alt="logotype">
+            </a>
+            <div class="footer__info">
+                <p class="footer__info_time">Режим работы с 10:00 до 20:00</p>
+                <a href="tel:+79673638350" class="header__phone footer__phone">+7 967 363 83 50</a>
+            </div>
+            <div class="footer__social">
+                <p class="footer__social_text">Написать нам:</p>
+                <div class="header__contacts_links footer__social_links">
+                    <a href="/" title="whatsapp" class="header__contacts_link footer__social_link">
+                        <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_2018_725)">
+                                <circle cx="20" cy="20.2812" r="20" fill="#2FB34D" />
+                                <path
+                                    d="M29.5632 14.2442C26.2027 9.02912 19.3211 7.48391 13.999 10.7192C8.8056 13.9545 7.13342 21.0045 10.4939 26.2035L10.7672 26.622L9.64169 30.8391L13.8543 29.7124L14.2723 29.986C16.0892 30.9679 18.0669 31.5312 20.0285 31.5312C22.1348 31.5312 24.2411 30.9679 26.058 29.8412C31.2514 26.461 32.795 19.5559 29.5632 14.212V14.2442ZM26.6208 25.0929C26.058 25.9299 25.3506 26.4932 24.3698 26.6381C23.807 26.6381 23.0995 26.9117 20.3018 25.8011C17.9222 24.6744 15.9445 22.8394 14.5457 20.7309C13.7096 19.749 13.2755 18.4774 13.1468 17.2059C13.1468 16.0791 13.5649 15.0973 14.2723 14.3891C14.5457 14.1154 14.8351 13.9706 15.1084 13.9706H15.8159C16.0892 13.9706 16.3787 13.9706 16.5234 14.5339C16.7967 15.2422 17.5042 16.9322 17.5042 17.0771C17.6489 17.222 17.5846 18.3004 16.9414 18.912C16.5877 19.3144 16.5234 19.3305 16.6681 19.6202C17.2308 20.4572 17.9383 21.3103 18.6297 22.0185C19.4658 22.7268 20.3179 23.2901 21.2987 23.7086C21.5721 23.8535 21.8615 23.8535 22.0062 23.5638C22.1509 23.2901 22.8423 22.5819 23.1317 22.2922C23.405 22.0185 23.5497 22.0185 23.8392 22.1473L26.0902 23.274C26.3635 23.4189 26.6529 23.5477 26.7976 23.6925C26.9423 24.111 26.9423 24.6744 26.6529 25.0929H26.6208Z"
+                                    fill="white" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_2018_725">
+                                    <rect width="40" height="40" fill="white" transform="translate(0 0.28125)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                    <a href="/" title="telegram" class="header__contacts_link footer__social_link">
+                        <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="20" cy="20.2812" r="20" fill="#018CCF" />
+                            <path
+                                d="M31.1744 12.1018L27.5763 29.0899C27.3079 30.2863 26.6191 30.5558 25.624 30.0157L20.2268 26.0013L17.5847 28.5486C17.3175 28.8193 17.0491 29.0899 16.4363 29.0899L16.8579 23.4911L26.9255 14.2647C27.3459 13.8396 26.8103 13.6851 26.2748 14.0336L13.7574 21.9857L8.35899 20.3258C7.17268 19.9402 7.17268 19.1282 8.62736 18.5893L29.6045 10.3653C30.6376 10.0563 31.5187 10.5976 31.1744 12.1018Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <nav class="footer__nav">
+
+            <ul class="footer__menu">
+                <li class="footer__item">
+                    <a href="/">О центре</a>
+                </li>
+                <li class="footer__item">
+                    <a href="/">Форматы работы</a>
+                </li>
+                <li class="footer__item">
+                    <a href="/">Направления</a>
+                </li>
+                <li class="footer__item">
+                    <a href="/">Специалисты</a>
+                </li>
+                <li class="footer__item">
+                    <a href="/">О Методе КПТ</a>
+                </li>
+                <li class="footer__item">
+                    <a href="/">Блог</a>
+                </li>
+                <li class="footer__item">
+                    <a href="/">Контакты</a>
+                </li>
+            </ul>
+            <div class="footer__devider"></div>
+            <div class="footer__wrapdownmenu">
+                <ul class="footer__downmenu">
+                    <li class="footer__downitem">
+                        <a href="/">
+                            Тревожные расстройствa</a>
+                    </li>
+                    <li class="footer__downitem">
+                        <a href="/">
+                            Специфические фобии
+                        </a>
+                    </li>
+                    <li class="footer__downitem">
+                        <a href="/">
+                            Депрессии
+                        </a>
+                    </li>
+                </ul>
+                <ul class="footer__downmenu">
+                    <li class="footer__downitem">
+                        <a href="/">
+                            Расстройства пищевого поведения
+                        </a>
+                    </li>
+                    <li class="footer__downitem">
+                        <a href="/">
+                            Расстройства личности
+                        </a>
+                    </li>
+                    <li class="footer__downitem">
+                        <a href="/">
+                            Перинатальная психотерапия
+                        </a>
+                    </li>
+                    <li class="footer__downitem">
+                        <a href="/">
+                            Профориентация
+                        </a>
+                    </li>
+                    <li class="footer__downitem">
+                        <a href="/">
+                            Коучинг
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+        <div class="footer__last">
+            <a href="/" class="btn-main footer__btn">Выбрать психолога</a>
+            <div class="footer__social-2">
+                <a class="footer__social-2_link" title="youtube" href="/">
+                    <svg width="34" height="25" viewBox="0 0 34 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M33.0775 4.22893C32.8863 3.50819 32.5133 2.85111 31.9957 2.32313C31.478 1.79515 30.8338 1.41468 30.1271 1.21962C27.54 0.5 17.1277 0.5 17.1277 0.5C17.1277 0.5 6.71497 0.521782 4.12786 1.2414C3.42118 1.43648 2.77693 1.81696 2.25928 2.34497C1.74162 2.87298 1.36862 3.53008 1.17742 4.25085C0.394878 8.93915 0.0913163 16.083 1.19891 20.5838C1.39013 21.3045 1.76314 21.9616 2.28079 22.4896C2.79845 23.0176 3.44268 23.398 4.14935 23.5931C6.73646 24.3127 17.149 24.3127 17.149 24.3127C17.149 24.3127 27.5613 24.3127 30.1483 23.5931C30.855 23.3981 31.4993 23.0176 32.017 22.4896C32.5346 21.9616 32.9077 21.3045 33.0989 20.5838C33.9243 15.8888 34.1786 8.74935 33.0775 4.22893Z"
+                            fill="#FF8740" />
+                        <path d="M13.3374 18.3681L23.209 12.6503L13.3374 6.93262V18.3681Z" fill="white" />
+                    </svg>
+                </a>
+                <a class="footer__social-2_link" title="vk" href="/">
+                    <svg width="41" height="23" viewBox="0 0 41 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M39.203 1.62705C39.4748 0.744792 39.203 0.0952148 37.9015 0.0952148H33.6042C32.5106 0.0952148 32.0064 0.655919 31.733 1.27479C31.733 1.27479 29.5475 6.43909 26.4517 9.79362C25.4498 10.7664 24.9947 11.075 24.4479 11.075C24.1745 11.075 23.7636 10.7664 23.7636 9.8825V1.62705C23.7636 0.567047 23.4624 0.0952148 22.5522 0.0952148H15.7943C15.1116 0.0952148 14.7007 0.586437 14.7007 1.05342C14.7007 2.05687 16.2494 2.28956 16.4082 5.11409V11.2511C16.4082 12.5971 16.1577 12.8411 15.6109 12.8411C14.1539 12.8411 10.6096 7.65261 8.50595 1.71593C8.09831 0.560583 7.68577 0.0952148 6.58728 0.0952148H2.28664C1.05883 0.0952148 0.813263 0.655919 0.813263 1.27479C0.813263 2.37681 2.27027 7.85136 7.599 15.092C11.1515 20.0366 16.1528 22.7173 20.7088 22.7173C23.4411 22.7173 23.7784 22.1227 23.7784 21.0966V17.3591C23.7784 16.1682 24.037 15.9307 24.903 15.9307C25.5415 15.9307 26.6334 16.2409 29.184 18.6243C32.098 21.4505 32.5777 22.7173 34.2181 22.7173H38.5154C39.7433 22.7173 40.3588 22.1227 40.0052 20.9463C39.6156 19.7764 38.224 18.0782 36.379 16.0632C35.3771 14.9159 33.8743 13.6798 33.4175 13.0609C32.7807 12.2675 32.9624 11.9136 33.4175 11.2075C33.4175 11.2075 38.6562 4.05569 39.2014 1.62705"
+                            fill="#2E6DB7" />
+                    </svg>
+                </a>
+            </div>
+            <div class="footer__copyright">
+                © 2025 Когниция, все права защищены.
+                Политика конфиденциальности
+                Контролирующие органы
+                ООО «МЕДМАРКЕТИНГ» Лицензия: <br> ЛО-23-01-014924
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -17,6 +17,23 @@
 			align-items: flex-start;
 			a:not(.btn-main) {
 				background: unset;
+				height: 50px;
+				width: 50px;
+				svg circle {
+					transition: .13s all ease-in-out;
+				}
+				&:hover {
+					&[title="whatsapp"] {
+						svg circle {
+							fill: #218b3a;
+						}
+					}
+					&[title="telegram"] {
+						svg circle {
+							fill: #1276a8;
+						}
+					}
+				}
 			}
 			h2 {
 				font-weight: 300;
@@ -105,4 +122,12 @@
 	.container {
 		position: relative;
 	}
+}
+
+.sign-up-mt {
+	margin-top: 80px;
+}
+
+.sign-up-mb {
+	margin-bottom: 60px;
 }

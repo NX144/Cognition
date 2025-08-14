@@ -4,7 +4,7 @@
     background-color: var(--2);
     display: grid;
     grid-template-columns: 302px 1fr 311px;
-    column-gap: 115px;
+    column-gap: 135px;
     justify-content: space-between;
     &::before {
         content: "";
@@ -156,14 +156,23 @@
         height: 2px;
         background: var(--white);
     }
-    &__downmenu {
+    &__wrapdownmenu {
         display: grid;
-        grid-template-rows: repeat(3, 28px);
-        grid-template-columns: repeat(3, max-content);
-        grid-auto-flow: column;
-        flex-wrap: wrap;
-        row-gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
         column-gap: 10px;
+    }
+    &__downmenu {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 20px;
+        &:first-child {
+            li {
+                a {
+                    padding-left: 0;
+                }
+            }
+        }
     }
     &__downitem {
         width: max-content;
@@ -181,16 +190,6 @@
                 svg path {
                     fill: var(--4);
                 }
-            }
-        }
-        &:nth-child(-n+3) {
-            a {
-                padding-left: 0;
-            }
-        }
-        &:nth-last-child(-n+3) {
-            a {
-                padding-right: 0;
             }
         }
     }

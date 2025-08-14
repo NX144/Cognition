@@ -163,6 +163,11 @@ h4 {
     color: var(--4);
 }
 
+.wrap-breadcrumbs {
+    margin-top: 32px;
+    margin-bottom: 48px;
+}
+
 .breadcrumbs {
     display: flex;
     align-items: center;
@@ -186,6 +191,57 @@ h4 {
     li:not(:has(> span)):after {
         content: '/';
         margin-left: 5px;
+    }
+}
+
+.pagination {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    &__left, &__right {
+        border-radius: 100%;
+        background: #fff;
+        border: 1px solid var(--2-2);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 22px;
+        transition: .11s all ease-in-out;
+        &:hover {
+            background: var(--2);
+        }
+    }
+    &__block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1px;
+    }
+    &__item {
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 48px;
+            width: 48px;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 150%;
+            text-align: center;
+            color: var(--4);
+            transition: .11s all ease-in-out;
+            border-radius: 50%;
+            &:hover {
+                background: var(--2);
+            }
+        }
+        &.active-page {
+            a {
+                background: var(--2);
+            }
+        }
     }
 }
 
