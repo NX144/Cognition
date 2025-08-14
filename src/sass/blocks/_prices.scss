@@ -1,0 +1,28 @@
+.prices {
+    margin: 50px 0;
+    position: relative;
+    &__title {
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 140%;
+        text-align: center;
+        color: var(--black);
+        margin-bottom: 40px;
+    }
+    &__descr {
+        font-weight: 300;
+        font-size: 32px;
+        line-height: 120%;
+        color: var(--4-2);
+        margin-bottom: 30px;
+    }
+    &__text {
+        font-size: 20px;
+        line-height: 160%;
+        color: var(--black);
+    }
+    &-block {
+        display: flex;
+        flex-direction: column;
+    }
+}

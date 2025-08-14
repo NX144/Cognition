@@ -1,0 +1,13 @@
+.top-section {
+    position: relative;
+    background: url("../../img/top-section.png") center center / cover no-repeat;
+    padding: 32px 0 70px;
+    .wrap-breadcrumbs {
+        margin-top: 0;
+        margin-bottom: 36px;
+    }
+    &__wrap {
+        display: flex;
+        gap: 20px;
+    }
+}
