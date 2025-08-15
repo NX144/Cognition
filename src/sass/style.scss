@@ -268,3 +268,7 @@ h4 {
 @include meta.load-css("blocks/_blog.scss");
 @include meta.load-css("blocks/_prices.scss");
 @include meta.load-css("blocks/_top-section.scss");
+@include meta.load-css("blocks/_kpt-main.scss");
+@include meta.load-css("blocks/_contact-baner.scss");
+@include meta.load-css("blocks/_kpt-info.scss");
+@include meta.load-css("blocks/_kpt-content.scss");
