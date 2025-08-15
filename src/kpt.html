@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>KPT</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+	<main>
+		<div class="wrap-breadcrumbs">
+			<div class="container">
+				<ul class="breadcrumbs">
+					<li><a href="/">Главная</a></li>
+					<li><span>О Методе КПТ</span></li>
+				</ul>
+			</div>
+		</div>
+		<div class="kpt-main">
+			<div class="container">
+				<div class="kpt-main__wrap">
+					<div class="kpt-main__left">
+						<h1>Когнитивно-поведенческая терапия</h1>
+						<h2>Оглавление</h2>
+						<ul>
+							<li><a href="#1">Что такое когнитивно-поведенческая терапия</a></li>
+							<li><a href="#2">Принципы когнитивно-поведенческой терапии</a></li>
+							<li><a href="#3">Заболевания, при которых применяется КПТ</a></li>
+							<li><a href="#4">Какие применяются техники</a></li>
+							<li><a href="#5">Противопоказания к КПТ</a></li>
+							<li><a href="#6">Преимущества обращения в Когницию</a></li>
+							<li><a href="#7">Часто задаваемые вопросы</a></li>
+						</ul>
+					</div>
+					<div class="kpt-main__right">
+						<img src="./img/kpt-women.jpg" alt="women">
+						<div class="spec__middle">
+							<img src="./icons/spec/1.png" alt="1">
+							<div class="spec__middle_wrap">
+								<img src="./icons/spec/2.png" alt="2">
+								<p><span>2022</span>Член Ассоциации Когнитивно-Поведенческой Психотерапии</p>
+							</div>
+						</div>
+					</div>
+			</div>
+		</div>
+	</main>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script>
+	document.querySelectorAll('.certificates__slider_slide').forEach(slide => {
+		if(slide.offsetWidth >= 330) {
+			slide.classList.add('wide');
+		}
+	})
+	const swiper = new Swiper('.swiper-certificates', {
+		slidesPerView: 4,
+		spaceBetween: 20,
+		loop: false,
+		lazy: true,
+		navigation: {
+			nextEl: '.swiper-certificates-button-next',
+			prevEl: '.swiper-certificates-button-prev',
+		},
+	})
+</script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
