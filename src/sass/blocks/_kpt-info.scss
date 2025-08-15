@@ -1,0 +1,56 @@
+.kpt-info {
+    padding-top: 80px;
+    &__wrapper {
+        padding: 0 110px;
+        &>p {
+            font-weight: 300;
+            font-size: 32px;
+            line-height: 150%;
+            color: var(--4-2);
+        }
+    }
+    &__wrap {
+        margin-top: 80px;
+        border-radius: 10px;
+        padding: 60px 80px; 
+        background: var(--gray);
+        p {
+            padding-top: 20px;
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 160%;
+            color: var(--black);
+        }
+        ul {
+            padding-top: 20px;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 133%;
+            color: var(--black);
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            li {
+                display: grid;
+                grid-template-columns: 48px 1fr;
+                align-items: center;
+                gap: 20px;
+                span {
+                    border-radius: 100%;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: var(--2);
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 150%;
+                    height: 48px;
+                    text-align: center;
+                    color: var(--4);
+                }
+            }
+        }
+    }
+}
