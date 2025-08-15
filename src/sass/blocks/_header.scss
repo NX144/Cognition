@@ -130,7 +130,7 @@
                     position: absolute;
                     max-width: 361px;
 
-                    right: -306px;
+                    right: -361px;
                     padding-top: 98px;
                     top: 0;
                     opacity: 0;
@@ -174,6 +174,93 @@
                         }
                     }
                 }
+            }
+        }
+        &.format {
+            .header__item_list > li ul {
+                padding-top: 49px;
+                max-width: 612px;
+                right: -612px;
+                a {
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 178%;
+                    color: var(--black);
+                    transition: all .3s ease-in-out;
+                    &:hover {
+                        color: var(--4);
+                    }
+                }
+            }
+            .header__item_list {
+                margin-top: 10px;
+            }
+        }
+        li:has(>a.header__item_banner) {
+            margin-top: 28px;
+        }
+        &_banner {
+            border-radius: 10px;
+            background: linear-gradient(20deg, #ffba90 0%, #ffe3d2 100%);
+            padding: 21px 101px 21px 32px;
+            display: grid;
+            width: 100%;
+            position: relative;
+            gap: 16px;
+            overflow: hidden;
+            grid-template-columns: 54px 1fr;
+            &-img {
+                width: 100%;
+                height: auto;
+                object-fit: contain;
+            }
+            h5 {
+                font-weight: 300;
+                font-size: 20px;
+                line-height: 160%;
+                color: var(--black);
+            }
+            p {
+                position: relative;
+                z-index: 10;
+                font-weight: 300;
+                font-size: 15px;
+                line-height: 133%;
+                display: flex;
+                align-items: center;
+                color: var(--black);
+                svg {
+                    width: 38px;
+                    height: 38px;
+                    margin-top: 4px;
+                }
+            }
+            .cloud {
+                position: absolute;
+                width: 171px;
+                height: auto;
+                object-fit: contain;
+                bottom: -14px;
+                right: -29px;
+                z-index: 1;
+            }
+            .circle {
+                position: absolute;
+                width: 187px;
+                height: auto;
+                object-fit: contain;
+                bottom: -145px;
+                right: -79px;
+                z-index: 2;
+            }
+            .women {
+                position: absolute;
+                width: 133px;
+                height: auto;
+                object-fit: contain;
+                bottom: -15px;
+                right: -10px;
+                z-index: 3;
             }
         }
     }
