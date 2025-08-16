@@ -1,0 +1,46 @@
+.answer {
+    padding-top: 80px;
+    ul {
+        margin-top: 60px;
+        li {
+            transition: all .3s ease-in-out;
+            overflow: hidden;
+            a {
+                font-weight: 300;
+                font-size: 20px;
+                line-height: 160%;
+                color: var(--black);
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                justify-content: space-between;
+                border-top: 1px solid var(--2-2);
+                padding: 10px 40px 10px 20px;
+
+                
+
+                span {
+                    transition: all .3s ease-in-out;
+                }
+            }
+            &:last-of-type a {
+                border-bottom: 1px solid var(--2-2);
+            }
+            &.active {
+                span {
+                    transform: rotate(90deg);
+                }
+            }
+        }
+    }
+    &__wrap {
+        padding: 20px 40px;
+        background: var(--2);
+        p {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 150%;
+            color: var(--black);
+        }
+    }
+}

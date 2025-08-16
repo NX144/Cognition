@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+    <main>
+        <div class="wrap-breadcrumbs">
+			<div class="container">
+				<ul class="breadcrumbs">
+					<li><a href="/">Главная</a></li>
+					<li><span>Контакты</span></li>
+				</ul>
+			</div>
+		</div>
+        <section class="contacts">
+            <div class="container">
+                <div class="contacts__wrap">
+                    <div class="contacts__left">
+                        <h2></h2>
+                        <h1></h1>
+                        <div class="contacts__block"></div>
+                        <div class="contacts__mess"></div>
+                        <div class="contacts__btns"><a href="" class="btn-main"></a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script>
+	document.querySelectorAll('.certificates__slider_slide').forEach(slide => {
+		if(slide.offsetWidth >= 330) {
+			slide.classList.add('wide');
+		}
+	})
+	const swiper = new Swiper('.swiper-certificates', {
+		slidesPerView: 4,
+		spaceBetween: 20,
+		loop: false,
+		lazy: true,
+		navigation: {
+			nextEl: '.swiper-certificates-button-next',
+			prevEl: '.swiper-certificates-button-prev',
+		},
+	})
+</script>
+<script src="js/script.js"></script>
+</body>
+</html>
