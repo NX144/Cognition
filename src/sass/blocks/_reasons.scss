@@ -25,6 +25,23 @@
     }
 }
 
+.reasons:not(.reasons-2) .kpt-info__wrap ul{
+    padding-left: 32px;
+    &>li {
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            left: -14px;
+            top: 14px;
+            background: var(--black);
+            border-radius: 100%;
+        }
+    }
+}
+
 .reasons-2 {
     .kpt-info__wrap {
         ul > li span {
