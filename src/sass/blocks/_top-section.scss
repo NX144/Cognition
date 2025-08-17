@@ -166,6 +166,28 @@
             color: var(--black);
         }
     }
+    .wrap {
+        display: grid;
+        grid-template-columns: 100px 1fr;
+        column-gap: 30px;
+        align-items: center;
+        &__info {
+            width: 100%;
+            max-width: 340px;
+        }
+        h3 {
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 150%;
+            color: var(--black);
+        }
+        p {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 150%;
+            color: var(--black);
+        }
+    }
 }
 
 .top-section.top-section-discount .top-section__title {
@@ -201,4 +223,31 @@
 
 .top-section.top-section-groups .top-section__descr {
     margin-bottom: 110px;
+}
+.top-section__block>ul.konus {
+    margin-top: 30px;
+    list-style: inside;
+    padding-left: 12px;
+    li {
+        list-style-type: disc;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 160%;
+        color: var(--black);
+        &::marker {
+            font-size: 14px;
+        }
+    }
+}
+.top-section__reception_title.top-section__reception_title-edit {
+    align-items: flex-end;
+    margin-top: 30px;
+    span {
+        &:first-of-type {
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 133%;
+            color: var(--black);
+        }
+    }
 }

@@ -63,6 +63,7 @@
 			}
 		}
 		&_title {
+			display: block;
 			margin-top: 20px;
 			font-weight: 600;
 			font-size: 24px;
@@ -76,7 +77,8 @@
 			font-size: 18px;
 			line-height: 150%;
 			color: var(--black);
-			li {
+			li a {
+				display: block;
 				transition: all .3s ease-in-out;
 				padding-left: 30px;
 				position: relative;
@@ -88,8 +90,7 @@
 					border-radius: 100%;
 					background: var(--black);
 					left: 12px;
-					top: 50%;
-					transform: translateY(-50%);
+					top: 11px;
 				}
 				&:hover {
 					color: var(--4);

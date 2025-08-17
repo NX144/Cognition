@@ -1,5 +1,11 @@
 .price {
 	padding-top: 80px;
+	&>div>.btn-main {
+		margin: 60px auto 0;
+	}
+	&.pt-middle {
+		padding-top: 60px;
+	}
 	&__wrap {
 		border: 1px solid var(--2-2);
 		border-radius: 10px;
