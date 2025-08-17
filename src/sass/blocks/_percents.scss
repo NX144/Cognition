@@ -1,0 +1,30 @@
+.percents {
+    width: 95%;
+    max-width: 1520px;
+    margin: 60px auto 80px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+    &__item {
+        width: 100%;
+        padding: 60px 80px;
+        border-radius: 10px;
+        background-color: var(--1-2);
+        &:last-child {
+            background-color: var(--4);
+        }
+    }
+    &__title {
+        font-weight: 300;
+        font-size: 64px;
+        line-height: 133%;
+        color: var(--white);
+        margin-bottom: 10px;
+    }
+    &__descr {
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 160%;
+        color: var(--white);
+    }
+}

@@ -43,4 +43,19 @@
             color: var(--black);
         }
     }
+
+
+
+    &-2 {
+        width: 95%;
+        max-width: 1520px;
+        margin: 0 auto;
+        margin-bottom: 80px;
+        .container {
+            width: 100%;
+        }
+        ul li a {
+            font-size: 28px;
+        }
+    }
 }

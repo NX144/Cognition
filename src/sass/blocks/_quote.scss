@@ -1,0 +1,74 @@
+.quote {
+    position: relative;
+    margin-bottom: 80px;
+    &__wrap {
+        width: 100%;
+        height: auto;
+        display: flex;
+        gap: 13%;
+        background: url("../../img/home-submain-bg.jpg") center center / cover no-repeat;
+        border-radius: 10px;
+    }
+    &__block {
+        padding: 73px 64px 0;
+    }
+    &__imgs {
+        position: relative;
+        height: 510px;
+        &_bg {
+            position: relative;
+            z-index: 5;
+        }
+        &_doctor {
+            width: 510px;
+            position: absolute;
+            bottom: -0;
+            left: 39px;
+            z-index: 6;
+        }
+        &_vector2 {
+            width: 668px;
+            position: absolute;
+            bottom: -0;
+            left: 0;
+            z-index: 5;
+        }
+        &_cloud {
+            z-index: 1;
+            width: 500px;
+            position: absolute;
+            bottom: -0;
+            left: 242px;
+            z-index: 4;
+        }
+        &_quote {
+            z-index: 1;
+            width: 135px;
+            position: absolute;
+            top: 0;
+            left: 591px;
+            z-index: 4;
+        }
+    }
+    &__text {
+        font-weight: 300;
+        font-size: 32px;
+        line-height: 150%;
+        text-transform: capitalize;
+        color: var(--4-2);
+        margin-bottom: 40px;
+    }
+    &__subtitle {
+        font-weight: 300;
+        font-size: 32px;
+        line-height: 120%;
+        color: var(--black);
+        margin-bottom: 10px;
+    }
+    &__descr {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 150%;
+        color: var(--black);
+    }
+}

@@ -1,0 +1,37 @@
+.reasons {
+    width: 95%;
+    max-width: 1520px;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    .kpt-info__wrap {
+        ul > li {
+            display: inline-block;
+        }
+        ul > li > strong {
+                display: inline;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 133%;
+                color: var(--black);
+        }
+        ul > li > p {
+                display: inline;
+                font-weight: 300;
+                font-size: 20px;
+                line-height: 160%;
+                color: var(--black);
+        }
+    }
+}
+
+.reasons-2 {
+    .kpt-info__wrap {
+        ul > li span {
+            width: 48px;
+            height: 48px;
+            display: inline-flex;
+            margin-right: 10px;
+        }
+    }
+}

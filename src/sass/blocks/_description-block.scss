@@ -1,0 +1,24 @@
+.description-block {
+    width: 100%;
+    max-width: 1520px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    & > .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: inherit;
+        width: inherit;
+    }
+    &__text {
+        width: 100%;
+        background: var(--2);
+        border-radius: 10px;
+        padding: 44px 80px;
+
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 160%;
+        color: var(--black);
+    }
+}
