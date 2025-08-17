@@ -45,4 +45,12 @@ document.addEventListener("DOMContentLoaded", () => {
 		throw new Error(`scroll function script error! \n Error: ${error}`)
 	}
 
+	document.querySelectorAll('.news img').forEach(img => {
+		if(img.style.float == "right") {
+			img.style.marginLeft = '20px';
+		} else if(img.style.float == "left") {
+			img.style.marginRight = '73px';
+		}
+	})
+
 });
