@@ -53,4 +53,21 @@ document.addEventListener("DOMContentLoaded", () => {
 		}
 	})
 
+	document.querySelectorAll('.groups__btns a').forEach(link => {
+		link.addEventListener('click', (e) => {
+			e.preventDefault();
+			document.querySelectorAll('.groups__btns a').forEach(link => {
+				link.classList.remove('active');
+			})
+			link.classList.add('active');
+			document.querySelectorAll('.group__list').forEach(list => {
+				if(list.getAttribute('data-tab') == link.getAttribute('data-tab')) {
+					list.classList.add('active');
+				} else {
+					list.classList.remove('active');
+				}
+			})
+		})
+	})
+
 });
