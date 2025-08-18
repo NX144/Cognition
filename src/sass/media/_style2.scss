@@ -1,4 +1,11 @@
 @use "sass:meta";
 
+@media(max-width: 1440px) {
+	.container {
+		width: 100%;
+		margin: 0 24px;
+	}
+}
+
 // Imports
-// @include meta.load-css("");
+@include meta.load-css("./_home-main.scss");
