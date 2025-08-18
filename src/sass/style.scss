@@ -286,3 +286,6 @@ h4 {
 @include meta.load-css("blocks/_reasons.scss");
 @include meta.load-css("blocks/_news.scss");
 @include meta.load-css("blocks/_groups.scss");
+
+
+@include meta.load-css("media/_style2.scss");
