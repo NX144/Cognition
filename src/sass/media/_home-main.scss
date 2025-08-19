@@ -95,3 +95,42 @@
 		}
 	}
 }
+
+@media(max-width: 768px) {
+	.home-main {
+		h1 {
+			font-size: 32px;
+			line-height: 115%;
+		}
+		ul {
+			margin-top: 10px;
+			li {
+				font-size: 20px;
+				line-height: 130%;
+			}
+		}
+		&__block {
+			p {
+				font-size: 18px;
+				margin-top: 10px;
+			}
+			&_card {
+				width: 100%;
+				padding: 20px;
+				span {
+					font-weight: 300;
+					font-size: 20px;
+				}
+			}
+			&_link {
+				margin: 30px auto 0;
+			}
+			&_img-2 {
+				width: 120%;
+				left: 50%;
+				top: 63%;
+				transform: translate(-50%, -50%);
+			}
+		}
+	}
+}

@@ -9,6 +9,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.css"/>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/panzoom/panzoom.css"/>
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -36,10 +38,17 @@
 						<a href="/" class="btn-main">Записаться</a>
 					</div>
 					<div class="spec__middle">
-						<img src="./icons/spec/1.png" alt="1">
+						<div class="spec__middle_wrap">
+							<img src="./icons/spec/1.png" alt="1">
+							<div><p><span>2022</span>Член Ассоциации Когнитивно-Поведенческой Психотерапии</p></div>
+						</div>
 						<div class="spec__middle_wrap">
 							<img src="./icons/spec/2.png" alt="2">
-							<p><span>2022</span>Член Ассоциации Когнитивно-Поведенческой Психотерапии</p>
+							<div><p><span>2022</span>Член Ассоциации Когнитивно-Поведенческой Психотерапии</p></div>
+						</div>
+						<div class="spec__middle_wrap">
+							<img src="./icons/spec/1.png" alt="1">
+							<div><p><span>2022</span>Член Ассоциации Когнитивно-Поведенческой Психотерапии</p></div>
 						</div>
 					</div>
 				</div>
@@ -190,16 +199,61 @@
 				</defs>
 			</svg>
 			<div class="certificates__wrap">
-				<h2>Дипломы и сертификаты</h2>
-				<div class="certificates__slider active">
+				<div class="certificates__top">
+					<h2>Дипломы и сертификаты</h2>
+					<a href="/specialists.html" class="btn-main">Выбрать психолога</a>
+				</div>
+				<div class="certificates__slider active" data-tab="Выбрать психолога">
 					<div class="swiper-container swiper-certificates">
 						<div class="swiper-wrapper">
-							<div class="swiper-slide certificates__slider_slide"><img src="./img/certificates/1.png" alt="1"></div>
-							<div class="swiper-slide certificates__slider_slide"><img src="./img/certificates/2.png" alt="2"></div>
-							<div class="swiper-slide certificates__slider_slide"><img src="./img/certificates/1.png" alt="1"></div>
-							<div class="swiper-slide certificates__slider_slide"><img src="./img/certificates/2.png" alt="2"></div>
-							<div class="swiper-slide certificates__slider_slide"><img src="./img/certificates/1.png" alt="1"></div>
-							<div class="swiper-slide certificates__slider_slide"><img src="./img/certificates/2.png" alt="2"></div>
+							<div class="swiper-slide certificates__slider_slide">
+								<a
+										data-fancybox="gallery"
+										data-src="./img/certificates/1.png"
+								>
+									<img src="./img/certificates/1.png" alt="1">
+								</a>
+							</div>
+							<div class="swiper-slide certificates__slider_slide">
+								<a
+										data-fancybox="gallery"
+										data-src="./img/certificates/2.png"
+								>
+									<img src="./img/certificates/2.png" alt="2">
+								</a>
+							</div>
+							<div class="swiper-slide certificates__slider_slide">
+								<a
+										data-fancybox="gallery"
+										data-src="./img/certificates/1.png"
+								>
+									<img src="./img/certificates/1.png" alt="1">
+								</a>
+							</div>
+							<div class="swiper-slide certificates__slider_slide">
+								<a
+										data-fancybox="gallery"
+										data-src="./img/certificates/2.png"
+								>
+									<img src="./img/certificates/2.png" alt="2">
+								</a>
+							</div>
+							<div class="swiper-slide certificates__slider_slide">
+								<a
+										data-fancybox="gallery"
+										data-src="./img/certificates/1.png"
+								>
+									<img src="./img/certificates/1.png" alt="1">
+								</a>
+							</div>
+							<div class="swiper-slide certificates__slider_slide">
+								<a
+										data-fancybox="gallery"
+										data-src="./img/certificates/2.png"
+								>
+									<img src="./img/certificates/2.png" alt="2">
+								</a>
+							</div>
 						</div>
 					</div>
 					<div class="swiper-certificates-button-prev">
@@ -604,6 +658,14 @@
 
 	<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
 	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.umd.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/panzoom/panzoom.umd.js"></script>
+
+	<script>
+		Fancybox.bind("[data-fancybox]", {
+			zoomEffect: true
+		});
+	</script>
 
 	<script>
 		document.querySelectorAll('.certificates__slider_slide').forEach(slide => {
