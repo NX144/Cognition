@@ -26,7 +26,9 @@ function dropdownHeaderMenu() {
 				}
 			})
 			document.querySelectorAll(".header__item_list").forEach(list => {
-				list.style.height = height + "px";
+				if(list.getAttribute('data-tab') === "true") {
+					list.style.height = height + "px";
+				}
 			})
 		})
 	})
