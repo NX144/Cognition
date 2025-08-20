@@ -1,0 +1,114 @@
+@media(max-width: 1200px) {
+    .kpt {
+        &::before {
+            top: 28%;
+            transform: translateY(-50%);
+            right: -376px;
+        }
+        &::after {
+            display: none;
+        }
+        padding: 40px 0;
+        & > div {
+            & > p {
+                font-size: 20px;
+                line-height: 133%;
+            }
+            & > p.first {
+                font-size: 24px;
+                line-height: 140%;
+                margin-bottom: 25px;
+            }
+        }
+        &__list {
+            margin-top: 40px;
+            justify-content: space-between;
+            &_item {
+                max-width: 48.9%;
+                & > a {
+                    margin: 0 auto;
+                    margin-top: 30px;
+                    width: max-content;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 991px) {
+    .kpt {
+        .container {
+            display: grid;
+        }
+        & > div {
+            & > p {
+                font-size: 16px;
+                line-height: 133%;
+                grid-row: 3 / 3;
+            }
+            & > p.first {
+                font-size: 20px;
+                line-height: 130%;
+                margin-bottom: 10px;
+                grid-row: 2 / 3;
+            }
+        }
+        &__list {
+            margin-top: 0;
+            margin-bottom: 40px;
+            &_item {
+                max-width: 48.2%;
+                & > a {
+                    font-size: 20px;
+                    line-height: 133%;
+                    width: 100%;
+                }
+            }
+            ul {
+                font-size: 16px;
+                line-height: 133%;
+            }
+        }
+    }
+}
+
+@media(max-width: 680px) {
+    .kpt {
+        &::before {
+            top: 30%;
+            right: -175px;
+        }
+        .container {
+            display: grid;
+        }
+        & > div {
+            & > p {
+                font-size: 16px;
+                line-height: 133%;
+                grid-row: 3 / 3;
+            }
+            & > p.first {
+                font-size: 20px;
+                line-height: 130%;
+                margin-bottom: 10px;
+                grid-row: 2 / 3;
+            }
+        }
+        &__list {
+            margin-top: 0;
+            margin-bottom: 40px;
+            &_item {
+                max-width: 100%;
+                & > a {
+                    &.btn-main {
+                        width: max-content;
+                        &:hover {
+                            color: #fff;
+                            background: var(--4);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

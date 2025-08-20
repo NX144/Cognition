@@ -1,0 +1,115 @@
+@media(max-width: 1555px) {
+    .team {
+        &__person {
+            width: 100%;
+            max-width: 272px;
+        }
+    }
+}
+
+@media(max-width: 1300px) {
+    h2 {
+        font-size: 32px;
+    }
+    .team {
+        &__block {
+            margin: 40px 0;
+            row-gap: 20px;
+        }
+        &__card {
+            overflow: hidden;
+        }
+        &__person {
+            position: absolute;
+            right: -60px;
+            bottom: -5px;
+            width: 100%;
+        }
+        &__name {
+            width: 48%;
+            max-width: 500px;
+            padding: 20px 40px;
+            min-height: 116px;
+            font-size: 24px;
+            line-height: 120%;
+        }
+        &__circles {
+            align-items: flex-end;
+            gap: 20px;
+            padding-left: 40px;
+        }
+        &__options_elem {
+            flex-wrap: wrap;
+            &-2 {
+                flex-wrap: wrap;
+            }
+        }
+        &__btn {
+            width: 50%;
+        }
+    }
+}
+
+@media(max-width: 991px) {
+    .team__block {
+        width: 100%;
+        max-width: 700px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 40px auto;
+    }
+}
+
+@media(max-width: 500px) {
+    h2 {
+        font-size: 34px;
+        line-height: 130%;
+    }
+    .team {
+        &__block {
+            margin: 30px auto 40px;
+        }
+        &__card {
+            min-height: 528px;
+            background: url('../../img/spec/bg.png') center center / cover no-repeat;
+        }
+        &__circles {
+            align-items: center;
+            justify-content: center;
+            padding-left: 0;
+            padding-top: 16px;
+            height: max-content;
+        }
+        &__info {
+            align-items: center;
+            flex-direction: column-reverse;
+            z-index: 1;
+        }
+        &__name {
+            width: 100%;
+            max-width: 500px;
+            padding: 20px;
+            min-height: 97px;
+            font-size: 24px;
+            border-top-right-radius: unset;
+            line-height: 120%;
+        }
+        &__btn {
+            width: 50%;
+            margin-bottom: 14px;
+            a {
+                font-size: 20px;
+            }
+        }
+        &__person {
+            position: absolute;
+            right: 44%;
+            transform: translateX(50%);
+            bottom: 93px;
+            width: 100%;
+        }
+    }
+    .btn-main {
+        font-size: 20px;
+    }
+}
