@@ -52,7 +52,7 @@
 
 		&__block {
 			&_img {
-				right: -20px;
+				right: -60px;
 				bottom: -38px;
 			}
 			&_absolute {
@@ -70,6 +70,12 @@
 				}
 			}
 		}
+	}
+}
+
+@media(max-width: 1023px) {
+	.home-main__block_img {
+		right: -100px;
 	}
 }
 
