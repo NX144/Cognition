@@ -10,6 +10,10 @@
         justify-content: space-between;
         column-gap: 20px;
     }
+    &__nav {
+        display: flex;
+        justify-content: center;
+    }
     &__menu {
         position: relative;
         display: flex;
