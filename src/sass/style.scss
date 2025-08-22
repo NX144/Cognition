@@ -72,7 +72,9 @@ h4 {
     max-width: 100%;
     z-index: 10;
     transition: all .3s ease-in-out;
-
+    &:first-child {
+        z-index: 999;
+    }
 }
 
 .select-button {
@@ -296,3 +298,9 @@ h4 {
 @include meta.load-css("media/_sign-up-media.scss");
 @include meta.load-css("media/_work-media.scss");
 @include meta.load-css("media/_kpt-media.scss");
+@include meta.load-css("media/_blog-specialist-media.scss");
+@include meta.load-css("media/_pagination-media.scss");
+@include meta.load-css("media/_sign-up-spec-sign-media.scss");
+@include meta.load-css("media/_blog-media.scss");
+@include meta.load-css("media/_wrap-breadcrumbs-media.scss");
+@include meta.load-css("media/_prices-media.scss");

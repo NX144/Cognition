@@ -1,0 +1,36 @@
+@media(max-width: 1200px) {
+    .blog.specialist {
+        .team__block {
+            margin-top: 40px;
+        }
+    }
+}
+
+@media(max-width: 1009px) {
+    .blog__top {
+        flex-direction: column;
+        gap: 20px;
+        h2 {
+            font-size: 24px;
+        }
+    }
+    .select-button {
+        padding: 18px 20px;
+        z-index: 99999999;
+        background: #fff;
+    }
+}
+
+@media(max-width: 680px) {
+    .blog__top {
+        flex-direction: column;
+        gap: 20px;
+        h2 {
+            font-size: 24px;
+        }
+    }
+    .select-button {
+        padding: 18px 15px;
+        gap: 10px;
+    }
+}

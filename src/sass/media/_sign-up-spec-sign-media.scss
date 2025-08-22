@@ -1,0 +1,196 @@
+@media(max-width: 1659px) {
+    .sign-up.spec-sign {
+        .sign-up__content {
+            h2 {
+                text-align: left;
+            }
+        }
+    }
+}
+
+@media(max-width: 1500px) {
+    .sign-up.spec-sign {
+        padding-top: 80px;
+        margin-bottom: 52px;
+        .container {
+            overflow: visible;
+        }
+        .sign-up__wrap {
+            max-width: 82%;
+            padding: 49px 89px 34px 48px;
+        }
+        .sign-up__content {
+            h2 {
+                text-align: left;
+                font-size: 32px;
+            }
+            h3 {
+                font-size: 20px;
+                margin-top: 10px;
+            }
+            & > span {
+                font-size: 32px;
+            }
+        }
+        .sign-up__bottom {
+            flex-wrap: wrap;
+            max-width: 425px;
+        }
+        .sign-up__img.cloud {
+            width: 430px;
+            right: 5px;
+        }
+        .sign-up__img.women {
+            width: 420px;
+            right: -4px;
+            bottom: -10px;
+        }
+        .sign-up__img.circle {
+            right: 40px;
+            bottom: -419px;
+            width: 513px;
+        }
+        .btn-main {
+            margin-left: 0;
+            margin-top: 10px;
+        }
+    }
+}
+
+
+@media(max-width: 991px) {
+    .sign-up.spec-sign {
+        padding-top: 25px;
+        margin-bottom: 43px;
+        .container {
+            overflow: visible;
+        }
+        .sign-up__wrap {
+            max-width: 100%;
+            padding: 31px 275px 34px 24px;
+        }
+        .sign-up__content {
+            h2 {
+                font-size: 24px;
+                line-height: 120%;
+            }
+            h3 {
+                font-size: 18px;
+                margin-top: 10px;
+                line-height: 133%;
+            }
+            & > span {
+                font-weight: 600;
+                line-height: 115%;
+                font-size: 32px;
+            }
+        }
+        .sign-up__bottom {
+            flex-wrap: wrap;
+            max-width: 425px;
+            & > span {
+                font-size: 15px;
+                line-height: 133%;
+            }
+        }
+        .sign-up__img.cloud {
+            width: 430px;
+            right: 5px;
+        }
+        .sign-up__img.women {
+            width: 370px;
+            right: -1px;
+            bottom: -10px;
+        }
+        .sign-up__img.circle {
+            right: 40px;
+            bottom: -419px;
+            width: 513px;
+        }
+        .btn-main {
+            margin-left: 0;
+            margin-top: 10px;
+        }
+    }
+}
+
+
+@media(max-width: 768px) {
+    .sign-up.spec-sign {
+        .container {
+            overflow: visible;
+        }
+        .sign-up__wrap {
+            padding: 31px 211px 34px 24px;
+        }
+        .sign-up__img.women {
+            width: 321px;
+            right: -17px;
+            bottom: 0px;
+        }
+    }
+}
+
+@media(max-width: 680px) {
+    .sign-up.spec-sign {
+        .container {
+            overflow: visible;
+        }
+        .sign-up__wrap {
+            padding: 24px 24px 276px;
+        }
+        .sign-up__content {
+            h2 {
+                text-align: center;
+                font-size: 24px;
+                line-height: 120%;
+                max-width: 420px;
+                width: 100%;
+                margin: 0 auto;
+            }
+            h3 {
+                text-align: center;
+                max-width: 400px;
+                width: 100%;
+                margin: 0 auto;
+                margin-top: 20px;
+            }
+            & > span {
+                font-weight: 600;
+                line-height: 115%;
+                font-size: 30px;
+                text-align: center;
+                margin: 10px auto 0;
+            }
+        }
+        .sign-up__bottom {
+            max-width: 300px;
+            justify-content: center;
+            margin: 20px auto 0;
+            & > span {
+                text-align: center;
+            }
+        }
+        .sign-up__img.cloud {
+            max-width: 414px;
+            width: 91%;
+            right: 50%;
+            transform: translateX(50%);
+        }
+        .sign-up__img.women {
+            width: 270px;
+            right: 45%;
+            transform: translateX(50%);
+            bottom: 0;
+        }
+        .sign-up__img.circle {
+            right: 136px;
+            bottom: -334px;
+            width: 410px;
+        }
+        .btn-main {
+            margin-left: 0;
+            margin-top: 10px;
+        }
+    }
+}
