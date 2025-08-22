@@ -2,9 +2,10 @@
     padding-top: 43px;
     &__wrap {
         display: grid;
-        grid-template-columns: 860px 1fr;
+        grid-template-columns: 1fr 862px;
         column-gap: 18px;
         row-gap: 20px;
+        align-items: flex-start;
     }
     h1 {
         font-weight: 600;
@@ -54,6 +55,9 @@
         max-width: 640px;
         p {
             box-shadow: none!important;
+        }
+        .spec__middle_wrap div {
+            max-width: 438px;
         }
     }
     .spec__middle_wrap {
