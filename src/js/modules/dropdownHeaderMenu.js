@@ -1,5 +1,5 @@
 function dropdownHeaderMenu() {
-    if(window.innerWidth > 991) {
+    if(window.innerWidth > 991 && document.querySelectorAll('.header__item.sub > a')) {
 	    document.querySelectorAll('.header__item.sub > a').forEach(item => {
 		    item.addEventListener('click', (e) => {
 			    e.preventDefault();
@@ -84,7 +84,7 @@ function dropdownHeaderMenu() {
 			    }
 		    })
 	    })
-    } else {
+    } else if(document.querySelector('.header__burger')) {
 		document.querySelector('.header__burger').addEventListener('click', () => {
 			document.querySelector('.header__nav').classList.toggle('active');
 		})
