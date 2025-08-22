@@ -9,12 +9,87 @@
 		width: 200vw;
 		left: -130%;
 	}
+	.news {
+		&__wrapper {
+			img {
+				max-height: 484px;
+			}
+			h2 {
+				font-size: 32px;
+				line-height: 130%;
+				margin-bottom: 20px;
+			}
+			p {
+				font-size: 24px;
+				line-height: 140%;
+			}
+			a.btn-main {
+				margin: 40px 0;
+			}
+		}
+		&__wrap {
+			padding: 0;
+		}
+	}
 }
 
 @media(max-width: 1440px) {
 	.container {
 		width: 100%;
 		padding: 0 24px;
+	}
+	.news {
+		padding: 40px 0 30px;
+		&__wrapper {
+			display: grid;
+			grid-template-columns: 100%;
+			grid-auto-rows: auto;
+			img {
+				float: unset!important;
+				border-radius: 10px;
+				max-height: unset;
+				width: 100%;
+				max-width: 100%;
+				display: block;
+				margin: 0!important;
+				grid-row-start: 4;
+				margin-bottom: 40px!important;
+			}
+		}
+		&__wrap {
+			&_top {
+				column-gap: 50px;
+				p {
+					font-size: 24px;
+				}
+			}
+			.kpt-info__wrap {
+				padding: 40px 60px;
+				margin-top: 40px;
+				h2 {
+					font-size: 32px;
+					line-height: 130%;
+				}
+				ul {
+					gap: 10px;
+				}
+			}
+		}
+		&__danger {
+			padding: 40px 40px 40px 60px;
+			margin-top: 40px;
+			p {
+				font-weight: 700;
+				font-size: 18px;
+			}
+		}
+		&__info {
+			margin-top: 40px;
+			h2 {
+				font-size: 32px;
+				line-height: 130%;
+			}
+		}
 	}
 	.footer {
 		&__wrap {
@@ -369,6 +444,78 @@
 @media(max-width: 768px) {
 	.container {
 		padding: 0 16px;
+	}
+	.news {
+		&__wrapper {
+			h2 {
+				font-size: 24px;
+				word-wrap: anywhere;
+			}
+			p {
+				word-wrap: anywhere;
+			}
+			a.btn-main {
+				margin: 30px 0;
+				max-width: 360px;
+				width: 100%;
+			}
+		}
+		&__wrap {
+			&_top {
+				column-gap: 20px;
+				align-items: flex-start;
+				grid-template-columns: 100px 1fr;
+				p {
+					font-size: 16px;
+					line-height: 133%;
+				}
+			}
+			&_img {
+				height: 100px;
+				img {
+					width: 74%;
+				}
+			}
+			.kpt-info__wrap {
+				margin-top: 30px;
+				padding: 20px;
+				h2 {
+					font-size: 24px;
+				}
+				p {
+					font-size: 16px;
+					line-height: 133%;
+				}
+				ul {
+					font-weight: 700;
+					font-size: 16px;
+				}
+			}
+		}
+		&__danger {
+			flex-direction: column;
+			padding: 20px;
+			margin-top: 30px;
+			p {
+				font-size: 16px;
+			}
+		}
+		&__info {
+			margin-top: 30px;
+			h2 {
+				font-size: 24px;
+			}
+			img {
+				margin-top: 20px;
+			}
+			p {
+				margin-top: 20px;
+				font-size: 16px;
+				span {
+					font-weight: 700;
+				}
+			}
+		}
 	}
 	.certificates .swiper-certificates-button-next, .certificates .swiper-certificates-button-prev {
 		display: none;
