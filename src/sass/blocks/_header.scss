@@ -1,21 +1,43 @@
 .header {
     position: relative;
-    padding: 33px 42px 33px 91px;
+    padding: 33px 0;
     background-color: var(--white);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+
+    &__wrap {
+        display: grid;
+        grid-template-columns: 271px 1fr 223px 227px;
+        align-items: center;
+        justify-content: space-between;
+        column-gap: 20px;
+    }
+    &__nav {
+        display: flex;
+        justify-content: center;
+    }
     &__menu {
         position: relative;
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
+        row-gap: 10px;
+    }
+    &__img img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+    &__burger {
+        display: none;
     }
     &__item {
         &_link {
             padding: 21.5px 10px;
             transition: .15s all ease-in-out;
-            svg path {
+            svg {
                 transition: .15s all ease-in-out;
+                path {
+                    transition: .15s all ease-in-out;
+                }
             }
             &:hover {
                 color: var(--4);

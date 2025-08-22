@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	// Dropdown menu header
 	try {
 		dropdownHeaderMenu();
+		// window.addEventListener('resize', dropdownHeaderMenu);
 	} catch(error) {
 		throw new Error(`Dropdown menu header function script error! \n Error: ${error}`)
 	}
