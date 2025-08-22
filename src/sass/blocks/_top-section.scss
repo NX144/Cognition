@@ -82,6 +82,7 @@
     &__btn {
         margin-bottom: 40px;
         cursor: pointer;
+        background: rgba(255, 255, 255, .5);
     }
     &__advantages {
         display: flex;
@@ -147,6 +148,7 @@
         box-shadow: 0 20px 64px 0 var(--2);
         width: 100%;
         max-width: max-content;
+        
         &_img {
             position: relative;
             width: 83px;
@@ -186,6 +188,11 @@
             font-size: 18px;
             line-height: 150%;
             color: var(--black);
+        }
+    }
+    &-discount-dn {
+        .top-section__discount {
+            display: none;
         }
     }
 }
