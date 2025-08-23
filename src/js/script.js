@@ -71,4 +71,18 @@ document.addEventListener("DOMContentLoaded", () => {
 		})
 	})
 
+	if(document.querySelector('.about__wrap') && window.innerWidth <= 768) {
+		document.querySelector('.about__wrap').style.height = '720px';
+		document.querySelector(".about__next").addEventListener('click', (e) => {
+			e.preventDefault();
+			document.querySelector('.about__wrap').classList.toggle("active");
+			document.querySelector('.about__next').classList.toggle("active");
+			if(document.querySelector('.about__wrap').classList.contains("active")) {
+				document.querySelector('.about__wrap').style.height = document.querySelector('.about__left').offsetHeight + document.querySelector('.about__right').offsetHeight + 'px';
+			} else {
+				document.querySelector('.about__wrap').style.height = '720px';
+			}
+		})
+	}
+
 });

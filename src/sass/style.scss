@@ -173,6 +173,7 @@ h4 {
 .breadcrumbs {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 5px;
     li, a {
         position: relative;

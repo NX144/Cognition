@@ -38,6 +38,24 @@
 
 	&__wrap {
 		max-width: 1031px;
+		position: relative;
+		z-index: 4;
+		a.btn-video {
+			span {
+				transition: all .15s ease-in-out;
+				svg path {
+					transition: all .15s ease-in-out;
+				}
+			}
+			&:hover {
+				span {
+					background: #dd0c32;
+					svg path {
+						fill: white;
+					}
+				}
+			}
+		}
 	}
 	&__descr {
 		margin-top: 10px;
@@ -58,9 +76,7 @@
 	}
 	&__middle {
 		margin-top: 20px;
-		//display: grid;
 		display: flex;
-		//grid-template-columns: repeat(3, minmax(100px, 1fr));
 		grid-template-rows: 100px;
 		column-gap: 20px;
 		row-gap: 10px;
@@ -79,7 +95,6 @@
 				transition: all .3s ease-in-out;
 				box-shadow: 0 20px 64px 0 var(--2);
 				background: var(--white);
-				overflow: hidden;
 				opacity: 0;
 				left: 90px;
 				width: max-content;
@@ -103,7 +118,9 @@
 			display: flex;
 			align-items: center;
 			gap: 20px;
+			border-radius: 10px;
 			margin-left: -10px;
+			background: var(--white);
 			span {
 				font-weight: 300;
 				font-size: 32px;
@@ -113,6 +130,7 @@
 		}
 	}
 	&__bottom {
+		margin-top: 36px;
 		position: relative;
 		z-index: 4;
 		backdrop-filter: blur(10.899999618530273px);
@@ -128,6 +146,7 @@
 	&__left {
 		ul {
 			display: flex;
+			flex-wrap: wrap;
 			align-items: center;
 			gap: 10px;
 			li {

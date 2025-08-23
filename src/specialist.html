@@ -121,6 +121,12 @@
 							Психологическое образование помогает и в жизни, потому как обладая профессиональными знаниями, могу помочь не только другим, но и себе, своей семье, ведь никто не застрахован от ситуаций, которые могут нарушить эмоциональный баланс, это зависит от множества факторов, но зная свои особенности, особенности окружающих меня людей получается сохранить или восстановить эмоциональное равновесие и поддерживать свое ментальное здоровье. Ведь забота о ментальном здоровье также важна, как и о физическом, ведь они неразрывно связаны между собой. </p>
 					</div>
 				</div>
+				<a href="/" class="about__next" style="display: none;">
+					Читать далее
+					<svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+					  <path fill-rule="evenodd" clip-rule="evenodd" d="M15.588 0.968667C15.85 1.2306 15.85 1.65528 15.588 1.91721L8.47394 9.03131C8.212 9.29325 7.78733 9.29325 7.52539 9.03131L0.411295 1.91721C0.149361 1.65528 0.14936 1.2306 0.411294 0.968668C0.673228 0.706734 1.09791 0.706734 1.35984 0.968668L7.99966 7.60849L14.6395 0.968667C14.9014 0.706733 15.3261 0.706733 15.588 0.968667Z" fill="black" />
+					</svg>
+				</a>
 			</div>
 		</section>
 		<section class="family">
@@ -670,7 +676,6 @@
 			zoomEffect: true
 		});
 	</script>
-
 	<script>
 		document.querySelectorAll('.certificates__slider_slide').forEach(slide => {
 			if(slide.offsetWidth >= 330) {
@@ -686,7 +691,23 @@
 				nextEl: '.swiper-certificates-button-next',
 				prevEl: '.swiper-certificates-button-prev',
 			},
+			breakpoints: {
+				0: {
+					slidesPerView: 1,
+					spaceBetween: 40,
+				},
+				1024: {
+					slidesPerView: 2,
+					slidesPerGroup: 2,
+					spaceBetween: 20
+				},
+				1441: {
+					slidesPerView: "auto",
+					spaceBetween: 20
+				}
+			}
 		})
+
 		const swiperT = new Swiper('.swiper-family', {
 			slidesPerView: 4,
 			spaceBetween: 32,
@@ -696,6 +717,24 @@
 				nextEl: '.swiper-family-button-next',
 				prevEl: '.swiper-family-button-prev',
 			},
+			breakpoints: {
+				0: {
+					slidesPerView: 1,
+					spaceBetween: 40,
+				},
+				600: {
+					slidesPerView: 2,
+					spaceBetween: 15,
+				},
+				992: {
+					slidesPerView: 3,
+					spaceBetween: 15,
+				},
+				1441: {
+					slidesPerView: 4,
+					spaceBetween: 32,
+				}
+			}
 		})
 	</script>
 	<script src="js/script.js"></script>
