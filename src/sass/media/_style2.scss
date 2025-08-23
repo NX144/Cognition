@@ -48,6 +48,63 @@
 		width: 100%;
 		padding: 0 24px;
 	}
+	.reviews {
+		padding-top: 0;
+		padding-bottom: 40px;
+		&__list {
+			grid-template-columns: repeat(auto-fit, minmax(478px, 1fr));
+			gap: 20px;
+			&_item {
+				padding: 81px 40px 40px;
+				position: relative;
+				&>p {
+					font-weight: 300;
+					font-size: 15px;
+					line-height: 133%;
+				}
+				&-top {
+					grid-template-columns: 101px 1fr;
+					ul {
+						position: absolute;
+						top: 40px;
+						right: 40px;
+					}
+				}
+				&-info {
+					h3 {
+						font-size: 24px;
+						line-height: 140%;
+					}
+				}
+			}
+		}
+	}
+	.group {
+		padding-top: 40px;
+		&__list {
+			margin-top: 40px;
+			&_item {
+				h4 {
+					font-size: 20px;
+					line-height: 133%;
+				}
+			}
+		}
+	}
+	.list {
+		padding-top: 20px;
+		&__wrap {
+			margin-top: 20px;
+			padding: 40px;
+		}
+		h3 {
+			font-size: 24px;
+			line-height: 140%;
+		}
+		ul {
+			margin-top: 20px;
+		}
+	}
 	.family {
 		&__wrap {
 			padding: 32px 0 82px;
@@ -377,6 +434,9 @@
 @media(max-width: 1300px) {
 	.certificates {
 		padding: 40px 0;
+	}
+	.certificates:has(+ .list) {
+		padding-bottom: 0!important;
 	}
 	.header {
 		padding: 19px 0;
@@ -713,6 +773,100 @@
 @media(max-width: 768px) {
 	.container {
 		padding: 0 16px;
+	}
+	.reviews {
+		h2 {
+			font-size: 24px;
+		}
+		&__top {
+			flex-direction: column;
+		}
+		&__list {
+			margin-top: 30px;
+			grid-template-columns: 1fr;
+			&_item {
+				padding: 20px;
+				&>p {
+					font-size: 16px;
+				}
+				&-top {
+					grid-template-columns: 1fr;
+					img {
+						width: 101px;
+					}
+					ul {
+						top: 20px;
+						right: 20px;
+					}
+				}
+				&-info {
+					h3 {
+						line-height: 120%;
+					}
+					p {
+						font-weight: 300;
+						font-size: 16px;
+						line-height: 133%;
+					}
+				}
+				&:not(:first-child, :nth-child(2)) {
+					display: none;	
+				}
+			}
+		}
+	}
+	.group {
+		h2 {
+			font-size: 24px;
+		}
+		&__list {
+			grid-template-columns: 1fr;
+			margin-top: 30px;
+			&_item {
+				padding: 20px;
+				h2 {
+					margin-top: 20px;
+				}
+				h4 {
+					font-size: 18px;
+					line-height: 133%;
+				}
+				ul {
+					margin: 20px 0;
+					span {
+						font-size: 20px;
+					}
+				}
+			}
+		}
+	}
+	.list {
+		&__wrap {
+			margin-top: 0;
+			padding: 20px;
+			&:last-child {
+				margin-top: 10px;
+			}
+		}
+		h3 {
+			font-size: 20px;
+			line-height: 130%;
+		}
+		ul {
+			li {
+				grid-template-columns: 1fr;
+				font-weight: 300;
+				font-size: 16px;
+				line-height: 133%;
+				span {
+					font-size: 24px;
+				}
+			}
+		}
+		p {
+			font-size: 16px;
+			line-height: 133%;
+		}
 	}
 	.family {
 		padding-top: 60px;

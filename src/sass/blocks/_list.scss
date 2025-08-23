@@ -12,6 +12,13 @@
 		text-align: center;
 		line-height: 120%;
 	}
+	p {
+		margin-top: 10px;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 150%;
+		color: var(--black);
+	}
 	ul {
 		margin-top: 30px;
 		display: flex;
