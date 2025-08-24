@@ -66,6 +66,9 @@
             bottom: 0;
             right: -259px;
         }
+        &-training {
+            padding-bottom: 60px !important;
+        }
     }
 }
 
@@ -91,6 +94,61 @@
                 font-size: 32px;
                 line-height: 133%;
                 max-width: 235px;
+            }
+        }
+        .wrap {
+            h3 {
+                font-size: 20px;
+                line-height: 133%;
+            }
+            p {
+                font-size: 15px;
+                line-height: 133%;
+            }
+        }
+        &-groups {
+            .top-section__title {
+                font-size: 40px;
+                line-height: 110%;
+                margin-bottom: 20px;
+            }
+            .top-section__descr {
+                font-size: 20px;
+                line-height: 133%;
+                margin-bottom: 80px !important;
+            }
+            .top-section__image {
+                margin-top: 0 !important;
+            }
+            .wrap-breadcrumbs {
+                margin-bottom: 36px !important;
+            }
+        }
+        &-training {
+            padding-bottom: 40px !important;
+            .top-section__conditions {
+                padding-top: 10px !important;
+                margin-bottom: 20px !important;
+            }
+            .top-section__title {
+                line-height: 100% !important;
+                margin-bottom: 10px !important;
+                max-width: 800px !important;
+                position: absolute !important;
+            }
+            .top-section__descr {
+                position: absolute;
+                margin-top: 90px !important;
+                font-size: 20px !important;
+                line-height: 133% !important;
+                margin-bottom: 30px !important;
+            }
+            .top-section__reception {
+                margin-top: 151px !important;
+                margin-bottom: 62px !important;
+            }
+            .top-section__image {
+                margin-top: 190px;
             }
         }
     }
@@ -119,6 +177,10 @@
                 span {
                     font-size: 18px;
                     line-height: 133%;
+                }
+                &-edit {
+                    flex-direction: row;
+                    margin-top: 5px;
                 }
             }
         }
@@ -153,6 +215,35 @@
         &__cloud {
             max-width: 650px;
         }
+        .wrap {
+            h3 {
+                font-size: 16px;
+                line-height: 120%;
+            }
+            p {
+                font-size: 12px;
+                line-height: 133%;
+            }
+        }
+        &-training {
+            .top-section__title {
+                font-size: 40px !important;
+            }
+            .top-section__descr {
+                margin-top: 70px !important;
+            }
+            .top-section__reception {
+                margin-top: 130px !important;
+                margin-bottom: 40px !important;
+            }
+            .top-section__reception_title {
+                flex-direction: row !important;
+                gap: 5px !important;
+            }
+            .top-section__image {
+                margin-top: 180px;
+            }
+        }
     }
 }
 
@@ -180,6 +271,58 @@
         }
         &__vector {
             right: -117px;
+        }
+        &__reception {
+            &_title {
+                &-edit {
+                    margin-top: 20px !important;
+                }
+            }
+        }
+        .wrap {
+            column-gap: 10px;
+            h3 {
+                font-size: 20px;
+                line-height: 130%;
+            }
+            p {
+                font-size: 15px;
+                line-height: 133%;
+            }
+        }
+        ul.konus {
+            margin-top: 20px;
+            li {
+                font-size: 16px;
+                line-height: 133%;
+            }
+        }
+        
+        &-training {
+            padding: 20px 0 !important;
+            .top-section__title {
+                font-size: 32px !important;
+                line-height: 115% !important;
+                position: relative !important;
+                margin-bottom: 10px !important;
+            }
+            .top-section__descr {
+                position: relative !important;
+                margin-top: 0 !important;
+                font-size: 20px !important;
+                line-height: 133% !important;
+                margin-bottom: 10px !important;
+            }
+            .top-section__reception {
+                margin-top: 0 !important;
+                margin-bottom: 20px !important;
+            }
+            .top-section__image {
+                margin-top: 20px !important;
+            }
+            .top-section__btn {
+                margin: 0 !important;
+            }
         }
     }
 }
