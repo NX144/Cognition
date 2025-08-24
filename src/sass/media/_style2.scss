@@ -13,8 +13,8 @@
 				width: 100%;
 			}
 			&::after, &+div::after {
-				width: 98%;
-				height: 98%;
+				width: 95%;
+				height: 96%;
 			}
 			&>svg {
 				display: none;
@@ -95,6 +95,76 @@
 	.container {
 		width: 100%;
 		padding: 0 24px;
+	}
+	.wrap-breadcrumbs:has(+ .contacts) {
+		margin-top: 18px;
+		margin-bottom: 0;
+	}
+	.contacts {
+		padding-top: 22px;
+		&__info {
+			padding-top: 0;
+			column-gap: 30px;
+			grid-template-columns: 1fr 373px;
+			p {
+				font-weight: 400;
+				font-size: 18px;
+				line-height: 150%;
+				column-gap: 30px;
+				&:last-of-type {
+					font-size: 20px;
+					line-height: 160%;
+				}
+			}
+		}
+		&__wrap {
+			grid-template-columns: 477px 1fr;
+			column-gap: 23px;
+		}
+		h1 {
+			line-height: 110%;
+			max-width: 477px;
+		}
+		&__block {
+			margin-top: 20px;
+			p {
+				font-size: 20px;
+				line-height: 160%;
+			}
+			a {
+				line-height: 110%;
+			}
+		}
+		&__mess {
+			margin-top: 20px;
+		}
+		&__btns {
+			margin-top: 40px;
+			column-gap: 10px;
+			flex-wrap: wrap;
+			.btn-main {
+				padding: 20px 36px;
+			}
+		}
+		&__right {
+			padding-left: 20px;
+			&>p {
+				font-size: 16px;
+				right: unset;
+				left: 0;
+			}
+			&>img {
+				right: 36px;
+			}
+			.cloud {
+				width: 500px;
+				left: 0;
+				bottom: -30px;
+				svg {
+					height: auto;
+				}
+			}
+		}
 	}
 	.reviews {
 		padding-top: 0;
@@ -563,6 +633,29 @@
 			grid-template-columns: 1fr;
 		}
 	}
+	.contacts {
+		h1 {
+			max-width: 100%;
+		}
+		&__wrap {
+			grid-template-columns: 1fr;
+		}
+		&__right {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			row-gap: 23px;
+			&>p {
+				max-width: 100%;
+				grid-column-start: 1;
+				grid-row-start: 1;
+				grid-column-end: 4;
+				position: static;
+			}
+		}
+		&__phone {
+			grid-row-start: 2;
+		}
+	}
 	.spec {
 		h1 {
 			font-size: 32px;
@@ -822,6 +915,105 @@
 @media(max-width: 768px) {
 	.container {
 		padding: 0 16px;
+	}
+	.contacts {
+		padding-top: 31px;
+		&__info {
+			grid-template-columns: 1fr;
+			p {
+				font-weight: 300;
+				font-size: 15px;
+				line-height: 133%;
+				&:last-of-type {
+					font-size: 16px;
+					line-height: 133%;
+				}
+			}
+		}
+		h2 {
+			font-size: 24px;
+		}
+		h1 {
+			font-size: 32px;
+			line-height: 115%;
+		}
+		&__block {
+			p {
+				font-size: 18px;
+				line-height: 133%;
+			}
+			a {
+				font-size: 32px;
+				line-height: 115%;
+			}
+		}
+		&__mess {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+		&__btns {
+			margin-top: 20px;
+			flex-direction: column;
+		}
+		&__left {
+			padding-bottom: 20px;
+		}
+		&__phone {
+			height: 324px;
+			width: 217px;
+			overflow: unset;
+			&::after, &+div::after {
+				width: 96%;
+				height: 96%;
+			}
+			.card {
+				img {
+					height: 100%;
+					width: auto;
+				}
+			}
+			&_wrap {
+				bottom: 38px;
+				svg {
+					width: 34px;
+					height: 34px;
+				}
+			}
+			&+div {
+				.contacts__phone_wrap {
+					bottom: 77px;
+					gap: 13px;
+					svg {
+						width: 27px;
+						height: 27px;
+					}
+				}
+			}
+			&+div {
+				position: absolute;
+				height: 252px;
+				width: 171px;
+				left: unset;
+				right: 20px;
+				bottom: -33px;
+			}
+		}
+		&__wrap {
+			grid-template-columns: 100%;
+		}
+		&__right {
+			grid-template-columns: 100%;
+			padding: 0;
+			.cloud {
+				width: 479px;
+				left: -56px;
+				bottom: -25px;
+			}
+			&>p {
+				grid-column-start: auto;
+				grid-column-end: auto;
+			}
+		}
 	}
 	.reviews {
 		h2 {
