@@ -1116,6 +1116,35 @@
                 }
             }
         })
+
+        const swiperT = new Swiper('.swiper-family', {
+            slidesPerView: 4,
+            spaceBetween: 32,
+            loop: false,
+            lazy: true,
+            navigation: {
+                nextEl: '.swiper-family-button-next',
+                prevEl: '.swiper-family-button-prev',
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                    spaceBetween: 40,
+                },
+                600: {
+                    slidesPerView: 2,
+                    spaceBetween: 15,
+                },
+                992: {
+                    slidesPerView: 3,
+                    spaceBetween: 15,
+                },
+                1441: {
+                    slidesPerView: 4,
+                    spaceBetween: 32,
+                }
+            }
+        })
     </script>
     <script>
         Fancybox.bind("[data-fancybox]", {

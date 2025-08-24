@@ -1,5 +1,8 @@
 @use "sass:meta";
 
+.contacts__info, .answer:has(+ footer), .price:has(+ footer), .blog:has(+ .team) {
+	padding-bottom: 80px;
+}
 @media(max-width: 1700px) {
 	.contacts {
 		&__phone {
@@ -95,6 +98,9 @@
 	.container {
 		width: 100%;
 		padding: 0 24px;
+	}
+	.contacts__info, .answer:has(+ footer), .price:has(+ footer), .blog:has(+ .team) {
+		padding-bottom: 40px;
 	}
 	.wrap-breadcrumbs:has(+ .contacts) {
 		margin-top: 18px;
@@ -429,6 +435,9 @@
 			display: grid;
 			grid-template-columns: 100%;
 			grid-auto-rows: auto;
+			&:not(:first-child) {
+				display: none;
+			}
 			img {
 				float: unset!important;
 				border-radius: 10px;
@@ -553,6 +562,9 @@
 @media(max-width: 1300px) {
 	.certificates {
 		padding: 40px 0;
+	}
+	.kpt-content+.kpt-content {
+		display: none;
 	}
 	.certificates:has(+ .list) {
 		padding-bottom: 0!important;
@@ -915,6 +927,9 @@
 @media(max-width: 768px) {
 	.container {
 		padding: 0 16px;
+	}
+	.contacts__info, .answer:has(+ footer), .price:has(+ footer), .blog:has(+ .team) {
+		padding-bottom: 30px;
 	}
 	.contacts {
 		padding-top: 31px;
