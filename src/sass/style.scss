@@ -309,3 +309,6 @@ h4 {
 @include meta.load-css("media/_tabs-media.scss");
 @include meta.load-css("media/_description-block-media.scss");
 @include meta.load-css("media/_general-info-media.scss");
+@include meta.load-css("media/_quote-media.scss");
+@include meta.load-css("media/_percents-media.scss");
+@include meta.load-css("media/_reasons-media.scss");
