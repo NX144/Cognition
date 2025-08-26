@@ -28,11 +28,11 @@
             font-weight: 300;
             font-size: 20px;
             line-height: 179%;
-            text-decoration: underline;
             text-decoration-skip-ink: none;
             color: var(--black);
             transition: all .3s ease-in-out;
             &:hover {
+                text-decoration: underline;
                 color: var(--4);
             }
         }

@@ -99,6 +99,7 @@
 		width: 100%;
 		padding: 0 24px;
 	}
+
 	.contacts__info, .answer:has(+ footer), .price:has(+ footer), .blog:has(+ .team) {
 		padding-bottom: 40px;
 	}
@@ -563,6 +564,9 @@
 	.certificates {
 		padding: 40px 0;
 	}
+	.kpt-main ul a {
+		text-decoration: none!important;
+	}
 	.kpt-content+.kpt-content {
 		display: none;
 	}
@@ -637,6 +641,7 @@
 	.header__item_link {
 		font-size: 14px;
 	}
+
 }
 
 @media(max-width: 991px) {
